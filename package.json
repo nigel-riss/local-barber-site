@@ -1,0 +1,27 @@
+{
+  "name": "local-barber-site",
+  "version": "1.0.0",
+  "description": "Site for Local Barbershop",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigel-riss/local-barber-site.git"
+  },
+  "author": "Yuriy Kurenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigel-riss/local-barber-site/issues"
+  },
+  "homepage": "https://github.com/nigel-riss/local-barber-site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
+  }
+}
