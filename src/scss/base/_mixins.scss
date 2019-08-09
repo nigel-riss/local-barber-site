@@ -1,0 +1,48 @@
+// breakpoints
+@mixin atMobile {
+    @media (min-width: 375px) {
+        @content;
+    }
+}
+
+// tablets portrait
+@mixin atTablet {
+    @media (min-width: 700px) {
+        @content;
+    }
+}
+
+// small desktop and tablets landscape
+@mixin atDesktopS {
+    @media (min-width: 1000px) {
+        @content;
+    }
+}
+
+// medium desktop and generic laptops
+@mixin atDesktopM {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+// large desktop
+@mixin atDesktopL {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
+// full high definition
+@mixin atFullHD {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+
+// ultra high definition
+@mixin atUltraHD {
+    @media (min-width: 2540px) {
+        @content;
+    }
+}

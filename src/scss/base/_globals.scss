@@ -1,0 +1,53 @@
+html {
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-size: 14px;
+
+    // visual
+    background-color: $black;
+
+    @include atDesktopM {
+        // typography
+        font-size: 16px;
+    }
+}
+
+body {
+    // box model
+    box-sizing: border-box;
+
+    // visual
+    // overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    // box model
+    box-sizing: border-box;
+}
+
+// main {
+//     display: none;
+// }
+
+// body::-webkit-scrollbar {
+//     // box model
+//     width: 8px;
+
+//     & * {
+//         background: transparent;
+//     }
+
+//     &-thumb {
+//         // visual
+//         background: $golden;
+//         border-radius: 10px;
+//     }
+    
+//     &-track {
+//         // visual
+//         background: transparent !important;
+//     }
+// }
