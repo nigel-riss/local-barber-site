@@ -6,5 +6,51 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Local Barbershop
 
+        link(rel="stylesheet", href="styles.css")
+
     body
-        h1 Привел Лена!!! Ура рендер пагов работает
+        header.header
+            .header__top
+                .header__logo
+                    .logo: img(src="", alt="")
+
+                .header__nav
+                    nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item: a(href="#") О нас
+                            li.main-nav__item: a(href="#") Услуги
+                            li.main-nav__item: a(href="#") Магазин
+                            li.main-nav__item: a(href="#") Прайс
+                            li.main-nav__item: a(href="#") Мастера
+                            li.main-nav__item: a(href="#") Контакты
+
+            .header__content
+                .header__caption
+                    h1.header__title Local Barbershop
+                    p.header__subtitle Современный барбершоп <em>в Кемерово</em>
+                    p.header__text Новая стильная мужская парикмахерская уже открыта и ждёт тех, кто ценит стильные причёски и идеальные бороды
+
+                .header__online
+                    a.button(href="#") Запись онлайн
+
+        main
+            section.selling-features
+                h2.selling-features__title Наши приемущества
+                .selling-features__content
+                    article.feature
+                        .feature__icon: img(src="", alt="")
+                        h3.feature__title Барбершоп с твоим характером
+                        p.feature__desc Local Barbershop - для настоящих ценителей стиля и качества
+
+                    article.feature
+                        .feature__icon: img(src="", alt="")
+                        h3.feature__title Наша команда профессионалов
+                        p.feature__desc Опытные мастера, знающие как подчеркнуть твою индивидуальность
+
+                    article.feature
+                        .feature__icon: img(src="", alt="")
+                        h3.feature__title Профессиональное оборудование
+                        p.feature__desc Только качественное оборудоване и метериалы для превосходного результата
+
+
+        footer
