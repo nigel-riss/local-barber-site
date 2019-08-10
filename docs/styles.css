@@ -147,11 +147,8 @@ template {
 html {
   color: #ffffff;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #0a0a0a; }
-  @media (min-width: 1200px) {
-    html {
-      font-size: 16px; } }
 
 body {
   box-sizing: border-box; }
@@ -180,7 +177,11 @@ body {
   font-style: normal; }
 
 .header {
-  padding: 20px; }
+  padding: 20px;
+  padding-bottom: 200px;
+  background-image: url("./img/bgs/header-s.jpg");
+  background-position: right -280px top;
+  background-size: cover; }
 
 .header__top {
   display: flex;
@@ -202,13 +203,62 @@ body {
   position: fixed;
   display: none; }
 
+.header__caption {
+  margin-bottom: 40px; }
+
+.header__title {
+  margin: 0;
+  margin-bottom: 0.25em;
+  font-size: 2rem;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
+
+.header__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1.4;
+  text-transform: uppercase; }
+
+.header__subtitle em {
+  color: #e30e2a;
+  font-style: normal; }
+
+.header__text {
+  margin: 0 auto;
+  width: 270px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+  text-align: center; }
+
+.header__online {
+  position: relative;
+  padding-bottom: 50px;
+  text-align: center; }
+
+.header__online::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 100px;
+  background-image: url("./img/decos/like-a-sir-u.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none; }
+
 .menu-button {
   position: relative;
   height: 48px;
   width: 48px;
   background-color: transparent;
   cursor: pointer;
-  border: 1px solid #343435;
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 50%; }
 
 .menu-button::before,
@@ -232,3 +282,22 @@ body {
 
 .menu-button::after {
   top: 29px; }
+
+.button {
+  display: inline-block;
+  padding: 0 45px;
+  color: #0a0a0a;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 51px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  transition: all 0.25s ease-out;
+  border: 2px solid #ffffff;
+  border-radius: 27px; }
+
+.button:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #949698; }

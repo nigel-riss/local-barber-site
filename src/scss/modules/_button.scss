@@ -1,3 +1,32 @@
 .button {
-    
+    // box model
+    display: inline-block;
+    padding: 0 45px;
+
+    // typography
+    color: $black;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 51px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $white;
+    transition: all 0.25s ease-out;
+
+    // border
+    border: 2px solid $white;
+    border-radius: 27px;
+}
+
+.button:hover {
+    // typography
+    color: $white;
+
+    // visual
+    background-color: transparent;
+
+    // border
+    border-color: $grey;
 }

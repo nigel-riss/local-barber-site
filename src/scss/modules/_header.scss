@@ -1,6 +1,12 @@
 .header {
     // box model
     padding: 20px;
+    padding-bottom: 200px;
+
+    // visual
+    background-image: url('./img/bgs/header-s.jpg');
+    background-position: right -280px top;
+    background-size: cover;
 }
 
 .header__top {
@@ -44,22 +50,85 @@
 }
 
 .header__caption {
-
+    // box model
+    margin-bottom: 40px;
 }
 
 .header__title {
+    // box model
+    margin: 0;
+    margin-bottom: 0.25em;
+
     // typography
+    font-size: 2rem;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
 }
 
 .header__subtitle {
+    // box model
+    margin: 0;
+    margin-bottom: 40px;
 
+    // typography
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.header__subtitle em {
+    // typography
+    color: $red;
+    font-style: normal;
 }
 
 .header__text {
+    // box model
+    margin: 0 auto;
+    width: 270px;
 
+    // typography
+    color: rgba($white, 0.75);
+    line-height: 1.5;
+    text-align: center;
 }
 
 .header__online {
+    // positioning
+    position: relative;
 
+    // box model
+    // border: 1px solid red;
+    padding-bottom: 50px;
+
+    // typography
+    text-align: center;
+
+
+}
+
+.header__online::after {
+    content: '';
+
+    // positioning
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    // box model
+    width: 220px;
+    height: 100px;
+
+    // visual
+    background-image: url('./img/decos/like-a-sir-u.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // other
+    pointer-events: none;
 }
 
