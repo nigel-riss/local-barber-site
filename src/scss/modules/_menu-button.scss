@@ -1,0 +1,51 @@
+.menu-button {
+    // positioning
+    position: relative;
+
+    // box model
+    height: 48px;
+    width: 48px;
+
+    // visual
+    background-color: transparent;
+    cursor: pointer;
+
+    // border
+    border: 1px solid $darkGrey;
+    border-radius: 50%;
+}
+
+.menu-button::before,
+.menu-button::after {
+    content: '';
+}
+
+.menu-button::before,
+.menu-button--middle,
+.menu-button::after {
+    // positioning
+    position: absolute;
+    left: 13px;
+
+    // box model
+    height: 3px;
+    width: 20px;
+
+    // visual
+    background-color: $white;
+}
+
+.menu-button::before {
+    // positioning
+    top: 15px;
+}
+
+.menu-button--middle {
+    // positioning
+    top: 22px;
+}
+
+.menu-button::after {
+    // positioning
+    top: 29px;
+}
