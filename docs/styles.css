@@ -178,3 +178,57 @@ body {
   src: url("./fonts/Montserrat-SemiBold.woff2") format("woff2"), url("./fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal; }
+
+.header {
+  padding: 20px; }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  background-image: url("./img/decos/premium-quality.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.header__logo {
+  height: 72px; }
+
+.header__logo img {
+  height: 100%; }
+
+.header__nav {
+  position: fixed;
+  display: none; }
+
+.menu-button {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #343435;
+  border-radius: 50%; }
+
+.menu-button::before,
+.menu-button::after {
+  content: ''; }
+
+.menu-button::before,
+.menu-button--middle,
+.menu-button::after {
+  position: absolute;
+  left: 13px;
+  height: 3px;
+  width: 20px;
+  background-color: #ffffff; }
+
+.menu-button::before {
+  top: 15px; }
+
+.menu-button--middle {
+  top: 22px; }
+
+.menu-button::after {
+  top: 29px; }
