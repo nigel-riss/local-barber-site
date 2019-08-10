@@ -209,6 +209,7 @@ body {
 .header__title {
   margin: 0;
   margin-bottom: 0.25em;
+  max-width: 300px;
   font-size: 2rem;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
@@ -216,6 +217,7 @@ body {
 .header__subtitle {
   margin: 0;
   margin-bottom: 40px;
+  max-width: 300px;
   font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: 0.025em;
