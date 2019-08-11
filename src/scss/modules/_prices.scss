@@ -1,5 +1,6 @@
 .prices {
-
+    // border
+    border-collapse: collapse;
 }
 
 .prices__row {
@@ -7,9 +8,37 @@
 }
 
 .prices td:first-child {
+    // box model
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-right: 20px;
+    vertical-align: top;
 
+    // typography
+    font-weight: 600;
+    line-height: 1.25;
+
+    // border
+    border-bottom: 1px solid $darkGrey;
 }
 
 .prices td:last-child {
+    // box model
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    vertical-align: top;
 
+    // typography
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: right;
+
+    // border
+    border-bottom: 1px solid $darkGrey;
+}
+
+.prices td:last-child::after {
+    content: " ₽";
 }
