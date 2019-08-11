@@ -435,3 +435,63 @@ body {
 
 .prices td:last-child::after {
   content: " ₽"; }
+
+.partners {
+  padding: 20px;
+  margin-bottom: 60px; }
+
+.partners__header {
+  margin-bottom: 20px; }
+
+.partners__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 360px;
+  margin: 0 auto; }
+
+.partner {
+  flex-basis: 45%;
+  margin-bottom: 20px;
+  height: 100px;
+  text-align: center;
+  opacity: 0.75; }
+
+.partner img {
+  height: 100%;
+  max-width: 100%;
+  object-position: center;
+  object-fit: contain; }
+
+.services {
+  padding: 20px;
+  margin-bottom: 60px; }
+
+.service {
+  position: relative;
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: #343435; }
+
+.service__header {
+  position: relative;
+  text-align: center; }
+
+.service__deco {
+  height: 64px; }
+
+.service__deco svg {
+  height: 100%;
+  fill: #ffffff; }
+
+.service__title {
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
+
+.service__subtitle {
+  margin-bottom: 0; }
+
+.service__image {
+  position: absolute; }

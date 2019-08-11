@@ -1,12 +1,21 @@
 .partners {
-
+    // box model
+    padding: 20px;
+    margin-bottom: 60px;
 }
 
 .partners__header {
-
+    // box model
+    margin-bottom: 20px;
 }
 
 .partners__content {
-
+    // box model
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 360px;
+    margin: 0 auto;
 }
 

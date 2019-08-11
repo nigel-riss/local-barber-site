@@ -1,7 +1,20 @@
 .partner {
+    // box model
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    height: 100px;
 
+    // typography
+    text-align: center;
+
+    // visual
+    opacity: 0.75;
 }
 
 .partner img {
-
+    // box model
+    height: 100%;
+    max-width: 100%;
+    object-position: center;
+    object-fit: contain;
 }

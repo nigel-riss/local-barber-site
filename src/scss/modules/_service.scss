@@ -1,0 +1,53 @@
+.service {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 25px;
+    margin-bottom: 25px;
+
+    // visual
+    background-color: $darkGrey;
+}
+
+.service__header {
+    // positioning
+    position: relative;
+
+    // typography
+    text-align: center;
+}
+
+.service__deco {
+    // box model
+    height: 64px;
+}
+
+.service__deco svg {
+    // box model
+    height: 100%;
+
+    // visual
+    fill: $white;
+}
+
+.service__title {
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.service__subtitle {
+    // box model
+    margin-bottom: 0;
+}
+
+.service__image {
+    // positioning
+    position: absolute;
+}
+
+.service__image img {
+
+}
