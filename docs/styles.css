@@ -178,7 +178,7 @@ body {
 
 .header {
   padding: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 120px;
   background-image: url("./img/bgs/header-s.jpg");
   background-position: right -280px top;
   background-size: cover; }
@@ -196,7 +196,8 @@ body {
 .header__logo {
   height: 72px; }
 
-.header__logo img {
+.header__logo img,
+.header__logo svg {
   height: 100%; }
 
 .header__nav {
@@ -303,3 +304,36 @@ body {
   color: #ffffff;
   background-color: transparent;
   border-color: #949698; }
+
+.selling-features {
+  padding: 20px; }
+
+.selling-features__title {
+  margin: 0;
+  font-size: 0; }
+
+.feature {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 280px;
+  text-align: center; }
+
+.feature__icon {
+  height: 92px;
+  margin-bottom: 20px; }
+
+.feature__icon svg {
+  height: 100%;
+  fill: #949698; }
+
+.feature__title {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.feature__desc {
+  margin: 0;
+  color: #949698;
+  line-height: 1.5; }

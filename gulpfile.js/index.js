@@ -2,6 +2,7 @@
 
 const gulp = require('gulp');
 const pug = require('gulp-pug');
+const embedSVG = require('gulp-embed-svg');
 const sass = require('gulp-sass');
 const server = require('browser-sync').create();
 
@@ -12,6 +13,7 @@ const dirs = {
   scss: './src/scss/**/*.scss',
   styles: './src/scss/styles.scss',
   docs: './docs',
+  svg: './src/img/**/*.svg',
 };
 
 
@@ -42,6 +44,9 @@ const reloadServer = (cb) => {
  */
 const renderPug = () => gulp.src(dirs.pug)
   .pipe(pug())
+  .pipe(embedSVG({
+    root: './src/',
+  }))
   .pipe(gulp.dest(dirs.docs));
 
 
@@ -57,6 +62,7 @@ const compileSCSS = () => gulp.src(dirs.styles)
 const watch = () => {
   startServer();
   gulp.watch(dirs.pug, gulp.series(renderPug, reloadServer));
+  gulp.watch(dirs.svg, gulp.series(renderPug, reloadServer));
   gulp.watch(dirs.scss, gulp.series(compileSCSS));
 };
 
