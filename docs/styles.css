@@ -495,3 +495,6 @@ body {
 
 .service__image {
   position: absolute; }
+
+.service__image img {
+  object-fit: cover; }
