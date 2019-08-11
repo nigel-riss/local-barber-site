@@ -337,3 +337,40 @@ body {
   margin: 0;
   color: #949698;
   line-height: 1.5; }
+
+.about {
+  padding: 20px; }
+
+.about__title {
+  color: #949698;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-align: center;
+  text-transform: uppercase; }
+
+.about__title em {
+  color: #e30e2a;
+  font-style: normal; }
+
+.about__subtitle {
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase; }
+
+.about__text {
+  padding-left: 21px;
+  line-height: 1.5;
+  border-left: 1px solid #e30e2a; }
+
+.about__more {
+  text-align: center; }
+
+.about__more-text {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase; }

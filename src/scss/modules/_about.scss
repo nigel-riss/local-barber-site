@@ -1,0 +1,72 @@
+.about {
+    // box model
+    padding: 20px;
+}
+
+.about__content {
+
+}
+
+.about__caption {
+
+}
+
+.about__title {
+    // typography
+    color: $grey;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__title em {
+    // typography
+    color: $red;
+    font-style: normal;
+}
+
+.about__subtitle {
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__text {
+    // box model
+    padding-left: 21px;
+
+    // typography
+    line-height: 1.5;
+
+    // border
+    border-left: 1px solid $red;
+}
+
+.about__photo {
+
+}
+
+.about__photo img {
+
+}
+
+.about__more {
+    // typography
+    text-align: center;
+}
+
+.about__more-text {
+    // box model
+    margin-bottom: 2rem;
+
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
