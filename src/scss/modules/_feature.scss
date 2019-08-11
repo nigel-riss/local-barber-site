@@ -1,0 +1,43 @@
+.feature {
+    // box model
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 280px;
+
+    // typography
+    text-align: center;
+}
+
+.feature__icon {
+    // box model
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+.feature__icon svg {
+    // box model
+    height: 100%;
+
+    // visual
+    fill: $grey;
+}
+
+.feature__title {
+    // box model
+    margin: 0;
+
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.feature__desc {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $grey;
+    line-height: 1.5;
+}

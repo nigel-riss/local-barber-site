@@ -1,7 +1,7 @@
 .header {
     // box model
     padding: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
 
     // visual
     background-image: url('./img/bgs/header-s.jpg');
@@ -28,7 +28,8 @@
     height: 72px;
 }
 
-.header__logo img {
+.header__logo img,
+.header__logo svg {
     // box model
     height: 100%;
 }
