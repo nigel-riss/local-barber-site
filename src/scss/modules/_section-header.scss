@@ -1,0 +1,50 @@
+.section-header {
+    // box model
+    padding-bottom: 40px;
+
+    // typography
+    text-align: center;
+}
+
+.section-header__subtitle {
+    // box model
+    margin: 0;
+
+    // typography
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.section-header__subtitle em {
+    // typography
+    color: $red;
+    font-style: normal;
+}
+
+.section-header__title {
+    // box model
+    margin: 0;
+
+    // typography
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-header__deco {
+    // box model
+    height: 60px;
+}
+
+.section-header__deco svg {
+    // box model
+    height: 100%;
+
+    // visual
+    fill: $white;
+    opacity: 0.75;
+}
+

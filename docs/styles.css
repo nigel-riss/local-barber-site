@@ -374,3 +374,33 @@ body {
   letter-spacing: 0.025em;
   line-height: 1.5;
   text-transform: uppercase; }
+
+.section-header {
+  padding-bottom: 40px;
+  text-align: center; }
+
+.section-header__subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.section-header__subtitle em {
+  color: #e30e2a;
+  font-style: normal; }
+
+.section-header__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.section-header__deco {
+  height: 60px; }
+
+.section-header__deco svg {
+  height: 100%;
+  fill: #ffffff;
+  opacity: 0.75; }
