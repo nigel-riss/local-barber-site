@@ -436,6 +436,41 @@ body {
 .prices td:last-child::after {
   content: " ₽"; }
 
+.promos {
+  padding: 20px;
+  margin-bottom: 60px; }
+
+.promo {
+  position: relative;
+  padding: 25px 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #343435; }
+
+.promo__header {
+  position: relative; }
+
+.promo__value {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 900; }
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.5; }
+
+.promo__desc {
+  margin: 0;
+  line-height: 1.5; }
+
+.promo__image {
+  position: absolute; }
+
 .partners {
   padding: 20px;
   margin-bottom: 60px; }

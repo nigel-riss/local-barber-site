@@ -1,25 +1,56 @@
 .promo {
+    // positioning
+    position: relative;
 
+    // box model
+    padding: 25px 25px;
+    margin-bottom: 25px;
+
+    // typography
+    text-align: center;
+
+    // visual
+    background-color: $darkGrey;
 }
 
 .promo__header {
-
+    // positioning
+    position: relative;
 }
 
 .promo__value {
+    // box model
+    margin: 0;
+    margin-bottom: 1rem;
 
+    // typography
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 .promo__title {
+    // box model
+    margin: 0;
+    margin-bottom: 1rem;
 
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    line-height: 1.5;
 }
 
 .promo__desc {
+    // box model
+    margin: 0;
 
+    // typography
+    line-height: 1.5;
 }
 
 .promo__image {
-
+    // positioning
+    position: absolute;
 }
 
 .promo__image img {
