@@ -8,7 +8,13 @@
     text-align: center;
 
     // visual
-    opacity: 0.75;
+    opacity: 0.65;
+    transition: all 0.25s ease-out;
+}
+
+.partner:hover {
+    // visual
+    opacity: 1;
 }
 
 .partner img {

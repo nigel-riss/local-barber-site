@@ -1,0 +1,76 @@
+.barber {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    height: 100vw;
+    max-height: 400px;
+    max-width: 335px;
+
+    // visual
+    background-color: $darkGrey;
+}
+
+.barber__header {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    // border
+    border: 2px solid $white;
+}
+
+.barber__header::before {
+    content: '';
+
+    // positioning
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    // box model
+    height: 64px;
+    width: 64px;
+
+    // visual
+    background-image: url('./img/logo-white.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.barber__name {
+    // box model
+    margin: 0;
+    margin-bottom: 0.25rem;
+
+    // typography
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.barber__position {
+    // box model
+    margin: 0;
+
+    // typography
+    text-transform: uppercase;
+}
+
+.barber__photo {
+    // positioning
+    position: absolute;
+}
+
+.barber__photo img {
+
+}

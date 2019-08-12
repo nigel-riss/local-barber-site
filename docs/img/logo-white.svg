@@ -4,12 +4,12 @@
         <style type="text/css">
             <![CDATA[
             .fil01 {
-                fill: #e30e2a;
+                fill: #ffffff;
                 fill-rule: nonzero
             }
 
-            .fil111 {
-                fill: #0a0a0a;
+            .fil11 {
+                fill: #ffffff;
                 fill-rule: nonzero
             }
             ]]>
