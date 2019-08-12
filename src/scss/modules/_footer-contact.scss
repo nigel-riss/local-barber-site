@@ -1,0 +1,29 @@
+.footer-contact {
+    // box model
+    margin-bottom: 1rem;
+
+    // typography
+    line-height: 1.5;
+}
+
+.footer-contact strong {
+
+}
+
+.footer-contact em {
+    // typography
+    color: $red;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer-contact a {
+    // typography
+    color: $white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    // typography
+    text-decoration: underline;
+}

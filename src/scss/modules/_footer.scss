@@ -1,59 +1,103 @@
 .footer {
-
+    // box model
+    padding: 20px;
+    padding-top: 50px;
 }
 
 .footer__brand-n-nav {
-
+    // box model
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .footer__branding {
+    // box model
+    flex-basis: 45%;
 
+    // typography
+    text-align: center;
 }
 
 .footer__branding .footer__copy {
-    
+    // box model
+    display: none;
 }
 
 .footer__logo {
-
+    // box model
+    height: 100px;
+    margin-bottom: 1rem;
 }
 
 .footer__logo svg {
-
+    // box model
+    height: 100%;
 }
 
 .footer__motto {
+    // box model
+    margin: 0;
 
+    // typography
+    color: $grey;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
 }
 
 .footer__copy {
-
+    // typography
+    color: $grey;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .footer__nav {
-
+    // box model
+    flex-basis: 45%;
 }
 
 .footer__contacts-n-legals{
-
+    // box model
+    margin-bottom: 60px;
 }
 
 .footer__contacts {
+    // box model
+    padding-bottom: 14px;
+    margin-bottom: 30px;
 
+    // typography
+    text-align: center;
+
+    // border
+    border-bottom: 1px solid $darkGrey;
 }
 
 .footer__legals {
-
+    // typography
+    font-size: 0.75rem;
 }
 
 .footer__legals-item {
+    // box model
+    margin-bottom: 1rem;
 
+    // typography
+    text-align: center;
+    line-height: 1.5;
 }
 
 .footer__legals-item a {
-
+    // typography
+    color: $white;
 }
 
 .footer__legals-item a:hover {
-
+    // typography
+    color: $red;
+    text-decoration: none;
 }

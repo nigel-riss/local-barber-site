@@ -1,15 +1,36 @@
 .footer-menu {
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 
+    height: 100%;
+    margin: 0;
+    margin-top: -3px;
+    padding: 0;
+
+    // typography
+    text-align: center;
+
+    // list
+    list-style: none;
 }
 
 .footer-menu__item {
-
+    // box model
+    padding: 6px;
 }
 
 .footer-menu__item a {
-
+    // typography
+    color: $white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .footer-menu__item a:hover {
-
+    // typography
+    text-decoration: underline;
 }
