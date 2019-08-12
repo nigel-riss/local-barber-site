@@ -498,3 +498,67 @@ body {
 
 .service__image img {
   object-fit: cover; }
+
+.c-card {
+  margin: 20px;
+  padding: 50px 25px;
+  color: #0a0a0a;
+  text-align: center;
+  background-color: #ffffff; }
+
+.c-card__image {
+  height: 92px;
+  margin-bottom: 20px;
+  text-align: center; }
+
+.c-card__image svg {
+  height: 100%; }
+
+.c-card__caption {
+  margin-bottom: 60px; }
+
+.c-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
+
+.c-card__title em {
+  color: #e30e2a;
+  font-style: normal; }
+
+.c-card__text {
+  line-height: 1.5; }
+
+.c-card__subtitle {
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.025em; }
+
+.c-card__deco {
+  height: 52px;
+  margin-top: -10px;
+  opacity: 0.5; }
+
+.c-card__deco svg {
+  height: 100%; }
+
+.c-card__c-name {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  line-height: 1.5; }
+
+.c-card__c-value {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: #949698;
+  font-weight: 600;
+  line-height: 1.5; }
+
+.c-card__c-value a {
+  color: #949698; }
+
+.c-card__c-value a:hover {
+  color: #e30e2a;
+  text-decoration: none; }

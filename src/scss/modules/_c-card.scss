@@ -1,0 +1,109 @@
+.c-card {
+    // box model
+    margin: 20px;
+    padding: 50px 25px;
+
+    // typography
+    color: $black;
+    text-align: center;
+
+    // visual
+    background-color: $white;
+}
+
+.c-card__image {
+    // box model
+    height: 92px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.c-card__image svg {
+    // box model
+    height: 100%;
+}
+
+.c-card__caption {
+    // box model
+    margin-bottom: 60px;
+}
+
+.c-card__title {
+    // typography
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.c-card__title em {
+    // typography
+    color: $red;
+    font-style: normal;
+}
+
+.c-card__text {
+    // typography
+    line-height: 1.5;
+}
+
+.c-card__subtitle {
+    // typography
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+}
+
+.c-card__deco {
+    // box model
+    height: 52px;
+    margin-top: -10px;
+
+    // visual
+    opacity: 0.5;
+}
+
+.c-card__deco svg {
+    // box model
+    height: 100%;
+}
+
+.c-card__contacts {
+
+}
+
+.c-card__c-name {
+    // box model
+    margin: 0;
+    margin-bottom: 0.25rem;
+
+    // typography
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.c-card__c-value {
+    // box model
+    margin: 0;
+    margin-bottom: 1rem;
+
+    // typography
+    color: $grey;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.c-card__c-value a {
+    // typography
+    color: $grey;
+}
+
+.c-card__c-value a:hover {
+    // typography
+    color: $red;
+    text-decoration: none;
+}
+
+.c-card__c-group {
+
+}
