@@ -346,6 +346,9 @@ section {
 .about {
   padding: 20px; }
 
+.about__caption {
+  margin-bottom: 40px; }
+
 .about__title {
   color: #949698;
   font-size: 1rem;
@@ -369,6 +372,48 @@ section {
   padding-left: 21px;
   line-height: 1.5;
   border-left: 1px solid #e30e2a; }
+
+.about__photo {
+  position: relative;
+  height: 100vw;
+  max-height: 400px;
+  margin: 0 -20px;
+  margin-bottom: 40px; }
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.about__deco {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  border: 2px solid #ffffff; }
+
+.about__deco::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 84px;
+  width: 84px;
+  background-image: url("./img/logo-white.svg");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.about__deco::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  height: 64px;
+  width: 240px;
+  background-image: url("./img/decos/beard-bro-u.svg");
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .about__more {
   text-align: center; }
