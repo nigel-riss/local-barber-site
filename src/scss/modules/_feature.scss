@@ -6,12 +6,18 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        padding: 0 10px;
+        flex-basis: 250px;
+    }
 }
 
 .feature__icon {
     // box model
-    height: 92px;
-    margin-bottom: 20px;
+    height: 72px;
+    margin-bottom: 1rem;
 }
 
 .feature__icon svg {
@@ -25,12 +31,18 @@
 .feature__title {
     // box model
     margin: 0;
+    margin-bottom: 0.25em;
 
     // typography
     font-weight: 600;
     letter-spacing: 0.025em;
     line-height: 1.5;
     text-transform: uppercase;
+
+    @include atTablet {
+        // typography
+        font-size: 0.75rem;
+    }
 }
 
 .feature__desc {
@@ -40,4 +52,9 @@
     // typography
     color: $grey;
     line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 0.85rem;
+    }
 }

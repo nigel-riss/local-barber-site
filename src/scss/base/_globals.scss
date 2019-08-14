@@ -32,6 +32,11 @@ section {
     // box model
     max-width: 405px;
     margin: 0 auto;
+
+    @include atTablet {
+        // box model
+        max-width: inherit;
+    }
 }
 
 // main {

@@ -17,7 +17,8 @@
     @include atTablet {
         // box model
         padding: 40px;
-        height: calc(100vh - 300px);
+        padding-bottom: 80px;
+        height: calc(100vh - 340px);
 
         // visual
         background-position: top right;
@@ -99,7 +100,7 @@
 .header__title {
     // box model
     margin: 0;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.25em;
 
     // typography
     font-size: 2rem;
@@ -155,7 +156,7 @@
 
     @include atTablet {
         // typography
-        text-align: left;
+        // text-align: left;
     }
 }
 
@@ -183,8 +184,8 @@
 
     @include atTablet {
         // positioning
-        transform: none;
-        left: 140px;
+        // transform: none;
+        // left: 140px;
     }
 }
 

@@ -1,6 +1,11 @@
 .selling-features {
     // box model
     padding: 20px;
+
+    @include atTablet {
+        // box model
+        padding: 40px;
+    }
 }
 
 .selling-features__title {
@@ -12,5 +17,9 @@
 }
 
 .selling-features__content {
-
+    @include atTablet {
+        // box model
+        display: flex;
+        // border: 1px solid red;
+    }
 }

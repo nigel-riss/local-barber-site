@@ -162,6 +162,9 @@ body {
 section {
   max-width: 405px;
   margin: 0 auto; }
+  @media (min-width: 700px) {
+    section {
+      max-width: inherit; } }
 
 @font-face {
   font-family: 'Montserrat';
@@ -196,7 +199,8 @@ section {
   @media (min-width: 700px) {
     .header {
       padding: 40px;
-      height: calc(100vh - 300px);
+      padding-bottom: 80px;
+      height: calc(100vh - 340px);
       background-position: top right;
       background-size: 140%; } }
 
@@ -245,7 +249,7 @@ section {
 
 .header__title {
   margin: 0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25em;
   font-size: 2rem;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
@@ -276,9 +280,6 @@ section {
   position: relative;
   padding-bottom: 50px;
   text-align: center; }
-  @media (min-width: 700px) {
-    .header__online {
-      text-align: left; } }
 
 .header__online::after {
   content: '';
@@ -293,10 +294,6 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none; }
-  @media (min-width: 700px) {
-    .header__online::after {
-      transform: none;
-      left: 140px; } }
 
 .menu-button {
   position: relative;
@@ -350,20 +347,31 @@ section {
 
 .selling-features {
   padding: 20px; }
+  @media (min-width: 700px) {
+    .selling-features {
+      padding: 40px; } }
 
 .selling-features__title {
   margin: 0;
   font-size: 0; }
+
+@media (min-width: 700px) {
+  .selling-features__content {
+    display: flex; } }
 
 .feature {
   margin: 0 auto;
   margin-bottom: 60px;
   max-width: 280px;
   text-align: center; }
+  @media (min-width: 700px) {
+    .feature {
+      padding: 0 10px;
+      flex-basis: 250px; } }
 
 .feature__icon {
-  height: 92px;
-  margin-bottom: 20px; }
+  height: 72px;
+  margin-bottom: 1rem; }
 
 .feature__icon svg {
   height: 100%;
@@ -371,15 +379,22 @@ section {
 
 .feature__title {
   margin: 0;
+  margin-bottom: 0.25em;
   font-weight: 600;
   letter-spacing: 0.025em;
   line-height: 1.5;
   text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .feature__title {
+      font-size: 0.75rem; } }
 
 .feature__desc {
   margin: 0;
   color: #949698;
   line-height: 1.5; }
+  @media (min-width: 700px) {
+    .feature__desc {
+      font-size: 0.85rem; } }
 
 .about {
   padding: 20px; }
