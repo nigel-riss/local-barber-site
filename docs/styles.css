@@ -398,9 +398,21 @@ section {
 
 .about {
   padding: 20px; }
+  @media (min-width: 700px) {
+    .about {
+      padding: 40px;
+      padding-bottom: 80px; } }
+
+@media (min-width: 700px) {
+  .about__content {
+    display: flex;
+    justify-content: space-between; } }
 
 .about__caption {
   margin-bottom: 40px; }
+  @media (min-width: 700px) {
+    .about__caption {
+      flex-basis: 47.5%; } }
 
 .about__title {
   color: #949698;
@@ -409,6 +421,9 @@ section {
   letter-spacing: 0.025em;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .about__title {
+      text-align: left; } }
 
 .about__title em {
   color: #e30e2a;
@@ -420,6 +435,9 @@ section {
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .about__subtitle {
+      text-align: left; } }
 
 .about__text {
   padding-left: 21px;
@@ -432,6 +450,10 @@ section {
   max-height: 400px;
   margin: 0 -20px;
   margin-bottom: 40px; }
+  @media (min-width: 700px) {
+    .about__photo {
+      flex-basis: 47.5%;
+      margin: 0; } }
 
 .about__photo img {
   width: 100%;
@@ -470,6 +492,9 @@ section {
 
 .about__more {
   text-align: center; }
+  @media (min-width: 700px) {
+    .about__more {
+      text-align: left; } }
 
 .about__more-text {
   margin-bottom: 2rem;
@@ -481,6 +506,9 @@ section {
 .price-list {
   padding: 20px;
   margin-bottom: 60px; }
+  @media (min-width: 700px) {
+    .price-list {
+      padding: 40px; } }
 
 .section-header {
   padding-bottom: 40px;
@@ -513,6 +541,7 @@ section {
   opacity: 0.75; }
 
 .prices {
+  width: 100%;
   border-collapse: collapse; }
 
 .prices td:first-child {
