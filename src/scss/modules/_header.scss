@@ -2,11 +2,27 @@
     // box model
     padding: 20px;
     padding-bottom: 120px;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     // visual
     background-image: url('./img/bgs/header-s.jpg');
-    background-position: right -280px top;
+    background-position: top right -280px;
     background-size: cover;
+    background-repeat: no-repeat;
+
+    @include atTablet {
+        // box model
+        padding: 40px;
+        height: calc(100vh - 300px);
+
+        // visual
+        background-position: top right;
+        background-size: 140%;
+    }
 }
 
 .header__top {
@@ -15,17 +31,32 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 60px;
+    flex-grow: 0;
 
     // visual
     background-image: url('./img/decos/premium-quality.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include atTablet {
+        // box model
+        padding-bottom: 20px;
+
+        // visual
+        background-position: bottom left 60px;
+        background-size: 160px;
+    }
 }
 
 .header__logo {
     // box model
     height: 72px;
+
+    @include atTablet {
+        // box model
+        height: 100px;
+    }
 }
 
 .header__logo img,
@@ -47,31 +78,47 @@
 }
 
 .header__content {
-
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 10;
 }
 
 .header__caption {
     // box model
     margin-bottom: 40px;
+    max-width: 300px;
+
+    @include atTablet {
+        // box model
+        max-width: 450px;
+    }
 }
 
 .header__title {
     // box model
     margin: 0;
-    margin-bottom: 0.25em;
-    max-width: 300px;
+    margin-bottom: 0.25rem;
 
     // typography
     font-size: 2rem;
     letter-spacing: 0.025em;
     text-transform: uppercase;
+
+    @include atTablet {
+        // box model
+
+        // typography
+        font-size: 3rem;
+    }
 }
 
 .header__subtitle {
     // box model
     margin: 0;
-    margin-bottom: 40px;
-    max-width: 300px;
+    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 
     // typography
     font-size: 1.125rem;
@@ -89,13 +136,11 @@
 
 .header__text {
     // box model
-    margin: 0 auto;
-    width: 270px;
+    margin: 0;
 
     // typography
     color: rgba($white, 0.75);
     line-height: 1.5;
-    text-align: center;
 }
 
 .header__online {
@@ -103,13 +148,15 @@
     position: relative;
 
     // box model
-    // border: 1px solid red;
     padding-bottom: 50px;
 
     // typography
     text-align: center;
 
-
+    @include atTablet {
+        // typography
+        text-align: left;
+    }
 }
 
 .header__online::after {
@@ -133,5 +180,11 @@
 
     // other
     pointer-events: none;
+
+    @include atTablet {
+        // positioning
+        transform: none;
+        left: 140px;
+    }
 }
 

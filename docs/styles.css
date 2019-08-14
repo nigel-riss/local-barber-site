@@ -184,22 +184,43 @@ section {
 .header {
   padding: 20px;
   padding-bottom: 120px;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: url("./img/bgs/header-s.jpg");
-  background-position: right -280px top;
-  background-size: cover; }
+  background-position: top right -280px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    .header {
+      padding: 40px;
+      height: calc(100vh - 300px);
+      background-position: top right;
+      background-size: 140%; } }
 
 .header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+  flex-grow: 0;
   background-image: url("./img/decos/premium-quality.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain; }
+  @media (min-width: 700px) {
+    .header__top {
+      padding-bottom: 20px;
+      background-position: bottom left 60px;
+      background-size: 160px; } }
 
 .header__logo {
   height: 72px; }
+  @media (min-width: 700px) {
+    .header__logo {
+      height: 100px; } }
 
 .header__logo img,
 .header__logo svg {
@@ -209,21 +230,33 @@ section {
   position: fixed;
   display: none; }
 
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 10; }
+
 .header__caption {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  max-width: 300px; }
+  @media (min-width: 700px) {
+    .header__caption {
+      max-width: 450px; } }
 
 .header__title {
   margin: 0;
-  margin-bottom: 0.25em;
-  max-width: 300px;
+  margin-bottom: 0.25rem;
   font-size: 2rem;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .header__title {
+      font-size: 3rem; } }
 
 .header__subtitle {
   margin: 0;
-  margin-bottom: 40px;
-  max-width: 300px;
+  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: 0.025em;
@@ -235,16 +268,17 @@ section {
   font-style: normal; }
 
 .header__text {
-  margin: 0 auto;
-  width: 270px;
+  margin: 0;
   color: rgba(255, 255, 255, 0.75);
-  line-height: 1.5;
-  text-align: center; }
+  line-height: 1.5; }
 
 .header__online {
   position: relative;
   padding-bottom: 50px;
   text-align: center; }
+  @media (min-width: 700px) {
+    .header__online {
+      text-align: left; } }
 
 .header__online::after {
   content: '';
@@ -259,6 +293,10 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none; }
+  @media (min-width: 700px) {
+    .header__online::after {
+      transform: none;
+      left: 140px; } }
 
 .menu-button {
   position: relative;
