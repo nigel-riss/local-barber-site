@@ -2,6 +2,11 @@
     // box model
     padding: 20px;
     margin-bottom: 60px;
+
+    @include atTablet {
+        // box model
+        padding: 40px;
+    }
 }
 
 .services__header {
@@ -9,5 +14,25 @@
 }
 
 .services__content {
+    @include atTablet {
+        // box model
+        display: flex;
+    }
+}
 
+.services__left {
+    @include atTablet {
+        // box model
+        flex-basis: 33%;
+        margin-right: 20px;
+    }
+}
+
+.services__right {
+    @include atTablet {
+        // box model
+        display: flex;
+        width: 100%;
+        flex-basis: 66%;
+    }
 }

@@ -2,6 +2,11 @@
     // box model
     padding: 20px;
     margin-bottom: 60px;
+
+    @include atTablet {
+        // box model
+        padding: 40px;
+    }
 }
 
 .partners__header {
@@ -17,5 +22,11 @@
     align-items: center;
     max-width: 360px;
     margin: 0 auto;
+
+    @include atTablet {
+        // box model
+        justify-content: center;
+        max-width: inherit;
+    }
 }
 

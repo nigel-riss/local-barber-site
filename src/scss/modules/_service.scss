@@ -3,9 +3,9 @@
     position: relative;
 
     // box model
-    padding: 25px;
     margin-bottom: 25px;
-
+    width: 100%;
+    
     // visual
     background-color: $darkGrey;
 }
@@ -13,9 +13,20 @@
 .service__header {
     // positioning
     position: relative;
+    z-index: 2;
+
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 25px;
 
     // typography
     text-align: center;
+
+    // visual
+    background-color: rgba($black, 0.25);
 }
 
 .service__deco {
@@ -46,9 +57,18 @@
 .service__image {
     // positioning
     position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .service__image img {
+    // box model
+    height: 100%;
+    width: 100%;
+
     // object
     object-fit: cover;
 }
