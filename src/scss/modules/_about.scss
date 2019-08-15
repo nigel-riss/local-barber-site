@@ -1,6 +1,13 @@
 .about {
     // box model
     padding: 20px;
+    padding-bottom: 200px;
+    margin-bottom: -160px;
+
+    // visual
+    background-image: url('./img/bgs/about-s.jpg');
+    background-size: cover;
+    background-position: center center;
 
     @include atTablet {
         // box model

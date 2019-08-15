@@ -397,7 +397,12 @@ section {
       font-size: 0.85rem; } }
 
 .about {
-  padding: 20px; }
+  padding: 20px;
+  padding-bottom: 200px;
+  margin-bottom: -160px;
+  background-image: url("./img/bgs/about-s.jpg");
+  background-size: cover;
+  background-position: center center; }
   @media (min-width: 700px) {
     .about {
       padding: 40px;
@@ -784,7 +789,10 @@ section {
 
 .footer {
   padding: 20px;
-  padding-top: 50px; }
+  padding-top: 50px;
+  background-image: url("./img/bgs/footer-s.jpg");
+  background-size: cover;
+  background-position: center center; }
 
 .footer__brand-n-nav {
   display: flex;
