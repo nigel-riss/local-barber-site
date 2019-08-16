@@ -1,3 +1,6 @@
 .promos-slider {
-
+    @include atTablet {
+        // box model
+        display: flex;
+    }
 }

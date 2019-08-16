@@ -5,33 +5,55 @@
     // box model
     margin-bottom: 25px;
     width: 100%;
+    min-height: 240px;
+    min-width: 300px;
     
     // visual
     background-color: $darkGrey;
+
+    @include atTablet {
+        // box model
+        // min-height: inherit;
+    }
 }
 
 .service__header {
     // positioning
-    position: relative;
+    position: absolute;
     z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 
     // box model
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-content: flex-end;
     height: 100%;
     padding: 25px;
 
     // typography
-    text-align: center;
+    // text-align: center;
 
     // visual
     background-color: rgba($black, 0.25);
 }
 
 .service__deco {
+    // positioning
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
     // box model
-    height: 64px;
+    height: 48px;
+
+    // typography
+    text-align: center;
 }
 
 .service__deco svg {
@@ -43,6 +65,10 @@
 }
 
 .service__title {
+    // box model
+    margin: 0;
+    margin-bottom: 0.5rem;
+
     // typography
     font-weight: 600;
     letter-spacing: 0.025em;
@@ -51,7 +77,7 @@
 
 .service__subtitle {
     // box model
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .service__image {

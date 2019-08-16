@@ -2,6 +2,11 @@
     // box model
     padding: 20px;
     margin-bottom: 60px;
+
+    @include atTablet {
+        // box model
+        padding: 30px;
+    }
 }
 
 .promos__header {
