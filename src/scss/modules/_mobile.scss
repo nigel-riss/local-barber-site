@@ -1,0 +1,69 @@
+.mobile {
+    // box model
+    padding: 20px;
+
+    // typography
+    text-align: center;
+}
+
+.mobile__header {
+
+}
+
+.mobile__caption {
+    // box model
+    margin-bottom: 1rem;
+}
+
+.mobile__subtitle {
+    // box model
+    margin: 0;
+
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.mobile__subtitle em {
+    // typography
+    color: $red;
+    font-style: normal;
+}
+
+.mobile__title {
+    // box model
+    margin: 0;
+
+    // typography
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mobile__buttons {
+    @include atTablet {
+        // box model
+        padding-left: 20px;
+    }
+}
+
+.mobile__deco {
+
+}
+
+.mobile__for {
+    // box model
+    display: none;
+}
+
+.mobile__image {
+    // box model
+    // display: none;
+}
+
+.mobile__image img {
+    // box model
+    width: 100%;
+}
+

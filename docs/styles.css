@@ -396,6 +396,62 @@ section {
     .feature__desc {
       font-size: 0.85rem; } }
 
+.mobile {
+  padding: 20px;
+  text-align: center; }
+
+.mobile__caption {
+  margin-bottom: 1rem; }
+
+.mobile__subtitle {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
+
+.mobile__subtitle em {
+  color: #e30e2a;
+  font-style: normal; }
+
+.mobile__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+@media (min-width: 700px) {
+  .mobile__buttons {
+    padding-left: 20px; } }
+
+.mobile__for {
+  display: none; }
+
+.mobile__image img {
+  width: 100%; }
+
+.mobile-button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  transition: all 0.25s ease-out; }
+
+.mobile-button:hover {
+  color: #0a0a0a;
+  background-color: #ffffff; }
+
+.mobile-button--ios {
+  letter-spacing: 0.15em; }
+
 .about {
   padding: 20px;
   padding-bottom: 200px;
