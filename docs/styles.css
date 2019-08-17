@@ -424,7 +424,11 @@ section {
     padding-left: 20px; } }
 
 .mobile__for {
-  display: none; }
+  display: none;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  text-transform: uppercase; }
 
 .mobile__image img {
   width: 100%; }
@@ -821,6 +825,10 @@ section {
   padding: 20px;
   margin-bottom: 50px; }
 
+@media (min-width: 700px) {
+  .barbers__content {
+    display: flex; } }
+
 .barber {
   position: relative;
   padding: 10px;
@@ -830,6 +838,11 @@ section {
   max-height: 400px;
   max-width: 335px;
   background-color: #343435; }
+  @media (min-width: 700px) {
+    .barber {
+      flex-basis: 33%;
+      margin: 0 10px;
+      height: 300px; } }
 
 .barber__header {
   position: relative;

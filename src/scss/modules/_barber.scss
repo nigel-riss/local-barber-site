@@ -12,6 +12,13 @@
 
     // visual
     background-color: $darkGrey;
+
+    @include atTablet {
+        // box model
+        flex-basis: 33%;
+        margin: 0 10px;
+        height: 300px;
+    }
 }
 
 .barber__header {

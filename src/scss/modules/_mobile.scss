@@ -55,6 +55,12 @@
 .mobile__for {
     // box model
     display: none;
+    margin: 0;
+
+    // typography
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
 }
 
 .mobile__image {

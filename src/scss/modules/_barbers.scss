@@ -9,6 +9,8 @@
 }
 
 .barbers__content {
-    // box model
-    
+    @include atTablet {
+        // box model
+        display: flex;
+    }
 }
