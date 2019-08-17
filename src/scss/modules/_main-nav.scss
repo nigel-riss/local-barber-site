@@ -1,16 +1,97 @@
 .main-nav {
+    // box model
+    padding: 40px;
+    padding-top: 120px;
 
+    // visual
+    background-color: rgba($black, 0.9);
+
+    // border
+    border-bottom: 2px solid $red;
+
+    @include atDesktopS {
+        // box model
+        padding: 0;
+
+        // visual
+        background-color: transparent;
+
+        // border
+        border-bottom: none;
+    }
 }
 
 .main-nav__list {
+    // box model
+    margin: 0;
+    padding: 0;
 
+    // list
+    list-style: none;
 }
 
 .main-nav__item {
+    // box model
+    // border: 1px solid red;
+    margin: 10px 0;
 
+    // typography
+    text-align: center; 
+
+    @include atDesktopS {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 20px;
+    }
 }
 
 .main-nav__item a {
+    // positioning
+    position: relative;
+
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+
+    // typography
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include atDesktopS {
+        // typography
+        font-size: 1rem;
+    }
+}
+
+.main-nav__item a::after {
+    content: '';
+
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+
+    // box model
+    height: 1px;
+    width: 0;
+
+    // visual
+    background-color: $red;
+    transition: all 0.25s ease-out;
+}
+
+.main-nav__item a:hover {
 
 }
 
+.main-nav__item a:hover::after {
+    // box model
+    width: 100%;
+}

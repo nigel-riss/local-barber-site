@@ -9,8 +9,20 @@
 
     @include atTablet {
         // box model
+        margin: 0;
         padding: 0 10px;
         flex-basis: 250px;
+        flex-basis: 33%;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin: 0;
+        max-width: inherit;
+        padding-right: 10px;
+
+        // typography
+        text-align: left;
     }
 }
 

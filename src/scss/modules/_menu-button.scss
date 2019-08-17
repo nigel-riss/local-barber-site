@@ -49,3 +49,23 @@
     // positioning
     top: 29px;
 }
+
+.menu-button--x-close {
+    .menu-button--middle {
+        // box model
+        width: 0;
+    }
+
+    &::before,
+    &::after {
+        // positioning
+        top: 22px;
+        transform-origin: center center;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        // positioning
+        transform: rotate(-45deg);
+    }
+}

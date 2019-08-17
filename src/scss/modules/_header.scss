@@ -59,9 +59,18 @@
         background-position: bottom left 60px;
         background-size: 160px;
     }
+
+    @include atDesktopS {
+        // box model
+        align-items: flex-start;
+    }
 }
 
 .header__logo {
+    // positioning
+    position: relative;
+    z-index: 2;
+
     // box model
     height: 72px;
 
@@ -79,14 +88,27 @@
 
 .header__nav {
     // positioning
-    position: fixed;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
 
-    // box model
-    display: none;
+    @include atDesktopS {
+        // positioning
+        position: relative;
+    }
 }
 
 .header__menu-button {
+    // positioning
+    position: relative;
+    z-index: 1;
 
+    @include atDesktopS {
+        // box model
+        display: none;
+    }
 }
 
 .header__content {

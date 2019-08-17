@@ -20,6 +20,10 @@
     @include atTablet {
         // box model
         display: flex;
-        // border: 1px solid red;
+        justify-content: space-between;
+    }
+
+    @include atDesktopS {
+        // box model
     }
 }
