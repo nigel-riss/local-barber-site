@@ -167,6 +167,9 @@
 }
 
 .mobile__image {
+    // visual
+    pointer-events: none;
+
     @include atTablet {
         // box model
         margin-top: -40px;

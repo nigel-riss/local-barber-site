@@ -665,15 +665,16 @@ section {
     .mobile__for span {
       display: block; } }
 
-@media (min-width: 700px) {
-  .mobile__image {
-    margin-top: -40px; } }
-
-@media (min-width: 1000px) {
-  .mobile__image {
-    flex-basis: 60%;
-    margin-top: -120px;
-    margin-bottom: -40px; } }
+.mobile__image {
+  pointer-events: none; }
+  @media (min-width: 700px) {
+    .mobile__image {
+      margin-top: -40px; } }
+  @media (min-width: 1000px) {
+    .mobile__image {
+      flex-basis: 60%;
+      margin-top: -120px;
+      margin-bottom: -40px; } }
 
 .mobile__image img {
   width: 100%; }

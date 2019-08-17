@@ -5,6 +5,7 @@ const pug = require('gulp-pug');
 const embedSVG = require('gulp-embed-svg');
 const sass = require('gulp-sass');
 const server = require('browser-sync').create();
+const webpack = require('webpack-stream');
 
 
 // Paths
@@ -14,7 +15,23 @@ const dirs = {
   styles: './src/scss/styles.scss',
   docs: './docs',
   svg: './src/img/**/*.svg',
+  js: './src/js/**/*.js',
 };
+
+
+// Webpack config
+const webpackConfig = {
+  entry: {
+    scripts: './src/js/scripts.js',
+  },
+
+  output: {
+    filename: '[name].js',
+  },
+
+  mode: 'production',
+  mode: 'development',
+}
 
 
 /**
@@ -59,16 +76,26 @@ const compileSCSS = () => gulp.src(dirs.styles)
   .pipe(server.reload({stream: true}));
 
 
+/**
+ * Compiles js files
+ */
+const compileScripts = () => gulp.src(dirs.js)
+  .pipe(webpack(webpackConfig))
+  .pipe(gulp.dest(dirs.docs));
+
+
 const watch = () => {
   startServer();
   gulp.watch(dirs.pug, gulp.series(renderPug, reloadServer));
   gulp.watch(dirs.svg, gulp.series(renderPug, reloadServer));
   gulp.watch(dirs.scss, gulp.series(compileSCSS));
+  gulp.watch(dirs.js, gulp.series(compileScripts, reloadServer));
 };
 
 
 // Export functions to tasks
 exports.renderPug = renderPug;
 exports.styles = compileSCSS;
+exports.scripts = compileScripts;
 
 exports.watch = watch;
