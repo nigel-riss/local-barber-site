@@ -115,29 +115,39 @@
     right: 0;
     top: 0;
     z-index: 1;
-
+    transform: translateY(-110%);
+    
     // visual
-    opacity: 0;
-
+    opacity: 0.5;
+    transition: all 0.25s ease-out;
+    
     @include atDesktopS {
         // positioning
         position: relative;
-
+        
         // visual
         opacity: 1;
     }
-
+    
     @include atDesktopM {
         // box model
         margin-right: -25px;
     }
 }
 
+.header__nav--open {
+    // positioning
+    transform: translateY(0);
+
+    // visual
+    opacity: 1;
+}
+
 .header__menu-button {
     // positioning
     position: relative;
     z-index: 1;
-
+    
     @include atDesktopS {
         // box model
         display: none;

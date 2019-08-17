@@ -1,6 +1,28 @@
 class MobileMenu {
     constructor () {
-        alert('1st time solo es6');
+        this.menuButton = document.querySelector('.menu-button');
+        this.mainNav = document.querySelector('.header__nav');
+
+        if (this.menuButton && this.mainNav) {
+            this.resetMenu();
+            this.addEventListeners();
+        }
+    }
+
+    addEventListeners () {
+        this.menuButton.addEventListener('click', () => {
+            this.toggleMenu();
+        });
+    }
+
+    resetMenu() {
+        this.menuButton.classList.remove('menu-button--x-close');
+        this.mainNav.classList.remove('header__nav--open');
+    }
+
+    toggleMenu () {
+        this.menuButton.classList.toggle('menu-button--x-close');
+        this.mainNav.classList.toggle('header__nav--open');
     }
 }
 

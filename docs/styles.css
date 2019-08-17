@@ -265,7 +265,9 @@ section {
   right: 0;
   top: 0;
   z-index: 1;
-  opacity: 0; }
+  transform: translateY(-110%);
+  opacity: 0.5;
+  transition: all 0.25s ease-out; }
   @media (min-width: 1000px) {
     .header__nav {
       position: relative;
@@ -273,6 +275,10 @@ section {
   @media (min-width: 1200px) {
     .header__nav {
       margin-right: -25px; } }
+
+.header__nav--open {
+  transform: translateY(0);
+  opacity: 1; }
 
 .header__menu-button {
   position: relative;
@@ -426,8 +432,12 @@ section {
   width: 48px;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 50%; }
+
+.menu-button:focus {
+  box-shadow: 0 0 3px 2px #ffffff; }
 
 .menu-button::before,
 .menu-button::after {
