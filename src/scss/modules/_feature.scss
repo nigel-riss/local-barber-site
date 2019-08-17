@@ -19,11 +19,16 @@
         // box model
         margin: 0;
         max-width: inherit;
-        padding-right: 10px;
+        padding-right: 15px;
 
         // typography
         text-align: left;
     }
+}
+
+.feature:last-child {
+    // box model
+    padding-right: 0;
 }
 
 .feature__icon {
@@ -68,5 +73,10 @@
     @include atTablet {
         // typography
         font-size: 0.85rem;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 0.75rem;
     }
 }

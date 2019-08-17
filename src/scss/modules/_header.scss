@@ -1,12 +1,13 @@
 .header {
     // box model
-    padding: 20px;
-    padding-bottom: 120px;
-    height: 100vh;
-    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
+    min-height: 600px;
+    margin-bottom: 60px;
+    padding: 20px;
+    padding-bottom: 120px;
 
     // visual
     background-image: url('./img/bgs/header-s.jpg');
@@ -29,6 +30,7 @@
         // box model
         height: 100vh;
         max-height: 800px;
+        margin-bottom: 0;
 
         // visual
         background-image: url('./img/bgs/header-l.jpg');
@@ -94,9 +96,15 @@
     top: 0;
     z-index: 1;
 
+    // visual
+    opacity: 0;
+
     @include atDesktopS {
         // positioning
         position: relative;
+
+        // visual
+        opacity: 1;
     }
 }
 
