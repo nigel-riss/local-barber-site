@@ -450,7 +450,8 @@ section {
   left: 13px;
   height: 3px;
   width: 20px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  transition: all 0.25s ease-out; }
 
 .menu-button::before {
   top: 15px; }

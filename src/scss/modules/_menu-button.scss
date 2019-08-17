@@ -39,6 +39,7 @@
 
     // visual
     background-color: $white;
+    transition: all 0.25s ease-out;
 }
 
 .menu-button::before {

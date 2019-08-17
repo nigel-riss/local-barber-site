@@ -13,6 +13,12 @@ class MobileMenu {
         this.menuButton.addEventListener('click', () => {
             this.toggleMenu();
         });
+
+        document.addEventListener('click', (evt) => {
+            if (evt.target.parentNode.classList.contains('main-nav__item')) {
+                this.toggleMenu();
+            }
+        });
     }
 
     resetMenu() {

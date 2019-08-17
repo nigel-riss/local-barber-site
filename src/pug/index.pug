@@ -16,12 +16,13 @@ html(lang="en")
                 .header__nav
                     nav.main-nav
                         ul.main-nav__list
-                            li.main-nav__item: a(href="#") О нас
+                            li.main-nav__item: a(href="#about") О нас
                             //- li.main-nav__item: a(href="#") Магазин
-                            li.main-nav__item: a(href="#") Прайс
-                            li.main-nav__item: a(href="#") Услуги
-                            li.main-nav__item: a(href="#") Мастера
-                            li.main-nav__item: a(href="#") Контакты
+                            li.main-nav__item: a(href="#price") Прайс
+                            li.main-nav__item: a(href="#promos") Aкции
+                            li.main-nav__item: a(href="#services") Услуги
+                            //- li.main-nav__item: a(href="#barbers") Мастера
+                            li.main-nav__item: a(href="#contacts") Контакты
 
                 .header__menu-button
                     //- button.menu-button.menu-button--x-close
@@ -71,7 +72,7 @@ html(lang="en")
                             h3.feature__title Профессиональное оборудование
                             p.feature__desc Только качественное оборудоване и&nbsp;метериалы для превосходного результата
 
-            section.about
+            section.about#about
                 .container
                     .about__content
                         .about__caption
@@ -85,7 +86,7 @@ html(lang="en")
                             img(src="./img/decos/about.jpg", alt="")
                             .about__deco
 
-            section.price-list
+            section.price-list#price
                 header.price-list__header
                     .section-header
                         p.section-header__subtitle <em>Наши</em> услуги
@@ -140,7 +141,7 @@ html(lang="en")
                             td Укладка и окантовка
                             td 600
 
-            section.promos
+            section.promos#promos
                 header.promos__header
                     .section-header
                         p.section-header__subtitle <em>Спец</em> предложения
@@ -173,8 +174,7 @@ html(lang="en")
                                     p.promo__desc Стрижка у одного мастера со&nbsp;скидкой
                             .promo__image: img(src="./img/promos/promo3.jpg", alt="")
 
-
-            section.partners
+            section.partners#partners
                 header.partners__header
                     .section-header
                         p.section-header__subtitle <em>Мы</em> сотрудничаем
@@ -188,7 +188,7 @@ html(lang="en")
                     article.partner: img(src="./img/partners/tnh.png", alt="Truefitt & Hill Logo")
                     article.partner: img(src="./img/partners/morgans-pomades.png", alt="Morgans Pomades Logo")
 
-            section.services
+            section.services#services
                 header.services__header
                     .section-header
                         p.section-header__subtitle <em>Мы</em> предлагаем
@@ -219,7 +219,7 @@ html(lang="en")
                                 p.service__subtitle Мужские и детские
                             .service__image: img(src="./img/bgs/haircut.jpg", alt="Стрижки")
 
-            section.barbers
+            //- section.barbers#barbers
                 header.barbers__header
                     .section-header
                         p.section-header__subtitle <em>Наши</em> барберы
@@ -246,7 +246,7 @@ html(lang="en")
                         .barber__photo: img(src="", alt="")
 
 
-            section.contacts
+            section.contacts#contacts
                 .contacts__map
                 .contacts__card
                     .c-card
@@ -277,12 +277,12 @@ html(lang="en")
                     //- p.footer__copy &copy; 2019 Local Barbershop
                 nav.footer__nav
                     ul.footer-menu
-                        li.footer-menu__item: a(href="#") О нас
-                        li.footer-menu__item: a(href="#") Прайс
-                        li.footer-menu__item: a(href="#") Акции
-                        li.footer-menu__item: a(href="#") Партнёры
-                        li.footer-menu__item: a(href="#") Услуги
-                        li.footer-menu__item: a(href="#") Мастера
+                        li.footer-menu__item: a(href="#about") О нас
+                        li.footer-menu__item: a(href="#price") Прайс
+                        li.footer-menu__item: a(href="#promos") Акции
+                        li.footer-menu__item: a(href="#partners") Партнёры
+                        li.footer-menu__item: a(href="#services") Услуги
+                        //- li.footer-menu__item: a(href="#") Мастера
             .footer__contacts-n-legals
                 .footer__contacts
                     .footer-contact <strong>г.Кемерово</strong> <br>по. Октябрьский 2Б, 1 этаж
