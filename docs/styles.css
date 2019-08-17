@@ -455,6 +455,9 @@ section {
     .selling-features {
       padding: 40px;
       margin-bottom: 60px; } }
+  @media (min-width: 1000px) {
+    .selling-features {
+      margin-bottom: 0; } }
 
 .selling-features__title {
   margin: 0;
@@ -521,7 +524,8 @@ section {
   text-align: center; }
   @media (min-width: 1000px) {
     .mobile {
-      padding: 0; } }
+      padding: 0;
+      margin-bottom: 60px; } }
 
 @media (min-width: 1000px) {
   .mobile__header {
@@ -650,11 +654,17 @@ section {
   margin-bottom: -160px;
   background-image: url("./img/bgs/about-s.jpg");
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat; }
   @media (min-width: 700px) {
     .about {
       padding: 40px;
       padding-bottom: 80px; } }
+  @media (min-width: 1000px) {
+    .about {
+      margin-top: -100px;
+      padding: 200px 40px;
+      background-image: url("./img/bgs/about-l.jpg"); } }
 
 @media (min-width: 700px) {
   .about__content {

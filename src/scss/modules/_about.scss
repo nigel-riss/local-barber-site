@@ -8,11 +8,22 @@
     background-image: url('./img/bgs/about-s.jpg');
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 
     @include atTablet {
         // box model
         padding: 40px;
         padding-bottom: 80px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-top: -100px;
+        padding: 200px 40px;
+
+        // visual
+        background-image: url('./img/bgs/about-l.jpg');
+        // background-size: contain;
     }
 }
 
