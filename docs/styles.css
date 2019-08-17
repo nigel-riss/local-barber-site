@@ -519,9 +519,25 @@ section {
 .mobile {
   padding: 20px;
   text-align: center; }
+  @media (min-width: 1000px) {
+    .mobile {
+      padding: 0; } }
+
+@media (min-width: 1000px) {
+  .mobile__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    padding: 20px 40px; } }
 
 .mobile__caption {
   margin-bottom: 1rem; }
+  @media (min-width: 1000px) {
+    .mobile__caption {
+      flex-basis: 40%;
+      margin-bottom: 0;
+      text-align: left; } }
 
 .mobile__subtitle {
   margin: 0;
@@ -538,17 +554,69 @@ section {
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase; }
+  @media (min-width: 1000px) {
+    .mobile__title {
+      font-size: 2.5rem; } }
 
 @media (min-width: 700px) {
   .mobile__buttons {
     padding-left: 20px; } }
 
+@media (min-width: 1000px) {
+  .mobile__buttons {
+    flex-basis: 60%;
+    white-space: nowrap; } }
+
+@media (min-width: 1000px) {
+  .mobile__deco {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    background-image: url("./img/logo-grey.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom -20px left 40px; } }
+
 .mobile__for {
+  position: relative;
   display: none;
-  margin: 0;
-  font-weight: 600;
-  letter-spacing: 0.025em;
-  text-transform: uppercase; }
+  margin: 0; }
+  @media (min-width: 1000px) {
+    .mobile__for {
+      display: block;
+      flex-basis: 40%;
+      color: #0a0a0a;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      line-height: 1.25;
+      text-align: left;
+      text-transform: uppercase; } }
+
+@media (min-width: 1000px) {
+  .mobile__for::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 2;
+    height: 64px;
+    width: 200px;
+    background-image: url("./img/decos/go-mobile-u.svg");
+    background-size: contain;
+    background-repeat: no-repeat; } }
+
+.mobile__for span {
+  white-space: nowrap; }
+  @media (min-width: 1000px) {
+    .mobile__for span {
+      display: block; } }
+
+@media (min-width: 1000px) {
+  .mobile__image {
+    flex-basis: 60%;
+    margin-top: -120px;
+    margin-bottom: -40px; } }
 
 .mobile__image img {
   width: 100%; }

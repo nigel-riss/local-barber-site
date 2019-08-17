@@ -4,15 +4,36 @@
 
     // typography
     text-align: center;
+
+    @include atDesktopS {
+        // box model
+        padding: 0;
+    }
 }
 
 .mobile__header {
-
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-items: flex-start;
+        padding: 20px 40px;
+    }
 }
 
 .mobile__caption {
     // box model
     margin-bottom: 1rem;
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 40%;
+        margin-bottom: 0;
+
+        // typography
+        text-align: left;
+    }
 }
 
 .mobile__subtitle {
@@ -39,6 +60,11 @@
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+
+    @include atDesktopS {
+        // typography
+        font-size: 2.5rem;
+    }
 }
 
 .mobile__buttons {
@@ -46,26 +72,93 @@
         // box model
         padding-left: 20px;
     }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 60%;
+
+        // typography
+        white-space: nowrap;
+    }
 }
 
 .mobile__deco {
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
 
+        // visual
+        background-color: $white;
+        background-image: url('./img/logo-grey.svg');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: bottom -20px left 40px;
+    }
 }
 
 .mobile__for {
+    // positioning
+    position: relative;
+
     // box model
     display: none;
     margin: 0;
 
+    @include atDesktopS {
+        // box model
+        display: block;
+        flex-basis: 40%;
+
+        // typography
+        color: $black;
+        font-weight: 600;
+        letter-spacing: 0.025em;
+        line-height: 1.25;
+        text-align: left;
+        text-transform: uppercase;
+    }
+}
+
+.mobile__for::after {
+    @include atDesktopS {
+        content: '';
+    
+        // positioning
+        position: absolute;
+        top: 0;
+        left: 150px;
+        z-index: 2;
+    
+        // box model
+        height: 64px;
+        width: 200px;
+    
+        // visual
+        background-image: url('./img/decos/go-mobile-u.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.mobile__for span {
     // typography
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include atDesktopS {
+        // box model
+        display: block;
+    }
 }
 
 .mobile__image {
-    // box model
-    // display: none;
+    @include atDesktopS {
+        // box model
+        flex-basis: 60%;
+        margin-top: -120px;
+        margin-bottom: -40px;
+    }
 }
 
 .mobile__image img {
