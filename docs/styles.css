@@ -1150,18 +1150,30 @@ section {
   background-image: url("./img/bgs/footer-s.jpg");
   background-size: cover;
   background-position: center center; }
+  @media (min-width: 1000px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px; } }
 
 .footer__brand-n-nav {
   display: flex;
   justify-content: space-around;
   margin-bottom: 50px; }
+  @media (min-width: 1000px) {
+    .footer__brand-n-nav {
+      flex-basis: 40%;
+      margin-bottom: 0; } }
 
 .footer__branding {
   flex-basis: 45%;
   text-align: center; }
-
-.footer__branding .footer__copy {
-  display: none; }
+  @media (min-width: 1000px) {
+    .footer__branding {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .footer__logo {
   height: 100px;
@@ -1189,20 +1201,41 @@ section {
 
 .footer__contacts-n-legals {
   margin-bottom: 60px; }
+  @media (min-width: 1000px) {
+    .footer__contacts-n-legals {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 60%;
+      margin-bottom: 0; } }
 
 .footer__contacts {
   padding-bottom: 14px;
   margin-bottom: 30px;
   text-align: center;
   border-bottom: 1px solid #343435; }
+  @media (min-width: 1000px) {
+    .footer__contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0; } }
 
 .footer__legals {
   font-size: 0.75rem; }
+  @media (min-width: 1000px) {
+    .footer__legals {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1rem; } }
 
 .footer__legals-item {
   margin-bottom: 1rem;
   text-align: center;
   line-height: 1.5; }
+  @media (min-width: 1000px) {
+    .footer__legals-item {
+      padding: 0 10px;
+      flex-basis: 50%; } }
 
 .footer__legals-item a {
   color: #ffffff; }
@@ -1238,6 +1271,13 @@ section {
 .footer-contact {
   margin-bottom: 1rem;
   line-height: 1.5; }
+  @media (min-width: 1000px) {
+    .footer-contact {
+      padding: 0 10px;
+      flex-basis: 50%; } }
+
+.footer-contact strong {
+  font-weight: 600; }
 
 .footer-contact em {
   color: #e30e2a;

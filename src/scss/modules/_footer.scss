@@ -7,6 +7,14 @@
     background-image: url('./img/bgs/footer-s.jpg');
     background-size: cover;
     background-position: center center;
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
 }
 
 .footer__brand-n-nav {
@@ -14,6 +22,12 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 40%;
+        margin-bottom: 0;
+    }
 }
 
 .footer__branding {
@@ -22,11 +36,13 @@
 
     // typography
     text-align: center;
-}
 
-.footer__branding .footer__copy {
-    // box model
-    display: none;
+    @include atDesktopS {
+        // box model
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .footer__logo {
@@ -58,6 +74,10 @@
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+
+    @include atDesktopS {
+        // box model
+    }
 }
 
 .footer__nav {
@@ -68,6 +88,15 @@
 .footer__contacts-n-legals{
     // box model
     margin-bottom: 60px;
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 60%;
+        margin-bottom: 0;
+    }
 }
 
 .footer__contacts {
@@ -80,11 +109,25 @@
 
     // border
     border-bottom: 1px solid $darkGrey;
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
 }
 
 .footer__legals {
     // typography
     font-size: 0.75rem;
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
 }
 
 .footer__legals-item {
@@ -94,6 +137,12 @@
     // typography
     text-align: center;
     line-height: 1.5;
+
+    @include atDesktopS {
+        // box model
+        padding: 0 10px;
+        flex-basis: 50%;
+    }
 }
 
 .footer__legals-item a {
