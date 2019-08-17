@@ -16,6 +16,11 @@
         flex-basis: 220px;
         padding: 0 20px;
     }
+
+    @include atDesktopS {
+        // box model
+        flex-basis: 20%;
+    }
 }
 
 .partner:hover {

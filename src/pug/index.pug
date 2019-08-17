@@ -10,32 +10,33 @@ html(lang="en")
 
     body
         header.header
-            .header__top
-                .header__logo: img(src="./img/logo.svg", alt="Логотип Local Barbershop")
+            .container
+                .header__top
+                    .header__logo: img(src="./img/logo.svg", alt="Логотип Local Barbershop")
 
-                .header__nav
-                    nav.main-nav
-                        ul.main-nav__list
-                            li.main-nav__item: a(href="#") О нас
-                            //- li.main-nav__item: a(href="#") Магазин
-                            li.main-nav__item: a(href="#") Прайс
-                            li.main-nav__item: a(href="#") Услуги
-                            li.main-nav__item: a(href="#") Мастера
-                            li.main-nav__item: a(href="#") Контакты
+                    .header__nav
+                        nav.main-nav
+                            ul.main-nav__list
+                                li.main-nav__item: a(href="#") О нас
+                                //- li.main-nav__item: a(href="#") Магазин
+                                li.main-nav__item: a(href="#") Прайс
+                                li.main-nav__item: a(href="#") Услуги
+                                li.main-nav__item: a(href="#") Мастера
+                                li.main-nav__item: a(href="#") Контакты
 
-                .header__menu-button
-                    //- button.menu-button.menu-button--x-close
-                    button.menu-button
-                        .menu-button--middle
+                    .header__menu-button
+                        //- button.menu-button.menu-button--x-close
+                        button.menu-button
+                            .menu-button--middle
 
-            .header__content
-                .header__caption
-                    h1.header__title Local Barbershop
-                    p.header__subtitle Современный барбершоп <em>в&nbsp;Кемерово</em>
-                    p.header__text Новая стильная мужская парикмахерская уже&nbsp;открыта и&nbsp;ждёт тех, кто ценит стильные причёски и&nbsp;идеальные бороды
+                .header__content
+                    .header__caption
+                        h1.header__title Local Barbershop
+                        p.header__subtitle Современный барбершоп <em>в&nbsp;Кемерово</em>
+                        p.header__text Новая стильная мужская парикмахерская уже&nbsp;открыта и&nbsp;ждёт тех, кто ценит стильные причёски и&nbsp;идеальные бороды
 
-                .header__online
-                    a.button(href="#") Запись онлайн
+                    .header__online
+                        a.button(href="#") Запись онлайн
 
         main
             section.mobile
@@ -54,34 +55,36 @@ html(lang="en")
 
             section.selling-features
                 h2.selling-features__title Наши приемущества
-                .selling-features__content
-                    article.feature
-                        .feature__icon: img(src="./img/icons/barber.svg", alt="")
-                        h3.feature__title Барбершоп с твоим характером
-                        p.feature__desc Local Barbershop - для&nbsp;настоящих ценителей стиля и&nbsp;качества
+                .container
+                    .selling-features__content
+                        article.feature
+                            .feature__icon: img(src="./img/icons/barber.svg", alt="")
+                            h3.feature__title Барбершоп с твоим характером
+                            p.feature__desc Local Barbershop - для&nbsp;настоящих ценителей стиля и&nbsp;качества
 
-                    article.feature
-                        .feature__icon: img(src="./img/icons/trophy.svg", alt="")
-                        h3.feature__title Наша команда профессионалов
-                        p.feature__desc Опытные мастера, знающие как&nbsp;подчеркнуть твою индивидуальность
+                        article.feature
+                            .feature__icon: img(src="./img/icons/trophy.svg", alt="")
+                            h3.feature__title Наша команда профессионалов
+                            p.feature__desc Опытные мастера, знающие как&nbsp;подчеркнуть твою индивидуальность
 
-                    article.feature
-                        .feature__icon: img(src="./img/icons/razor.svg", alt="")
-                        h3.feature__title Профессиональное оборудование
-                        p.feature__desc Только качественное оборудоване и&nbsp;метериалы для превосходного результата
+                        article.feature
+                            .feature__icon: img(src="./img/icons/razor.svg", alt="")
+                            h3.feature__title Профессиональное оборудование
+                            p.feature__desc Только качественное оборудоване и&nbsp;метериалы для превосходного результата
 
             section.about
-                .about__content
-                    .about__caption
-                        h2.about__title <em>O</em> нашем барбершопе
-                        p.about__subtitle Добро пожаловать в Local Barbershop, первый барбершоп с твоим характером
-                        p.about__text Мы намного больше, чем просто мужская парикмахерская, это даже больше, чем мужской клуб по интересам, это именно то место, где ты найдёшь себя и свой стиль. Мужские стрижки и бритьё - это наш профиль, и мы уверены, что мы стрижём и бреем лучше всех.
-                        .about__more
-                            p.about__more-text Мы всегда рады новым друзьям и с нетерпением ждём тебя в гости!
-                            //- a.button(href="#") Узнай больше
-                    .about__photo
-                        img(src="./img/decos/about.jpg", alt="")
-                        .about__deco
+                .container
+                    .about__content
+                        .about__caption
+                            h2.about__title <em>O</em> нашем барбершопе
+                            p.about__subtitle Добро пожаловать в Local Barbershop, первый барбершоп с твоим характером
+                            p.about__text Мы намного больше, чем просто мужская парикмахерская, это даже больше, чем мужской клуб по интересам, это именно то место, где ты найдёшь себя и свой стиль. Мужские стрижки и бритьё - это наш профиль, и мы уверены, что мы стрижём и бреем лучше всех.
+                            .about__more
+                                p.about__more-text Мы всегда рады новым друзьям и с нетерпением ждём тебя в гости!
+                                //- a.button(href="#") Узнай больше
+                        .about__photo
+                            img(src="./img/decos/about.jpg", alt="")
+                            .about__deco
 
             section.price-list
                 header.price-list__header

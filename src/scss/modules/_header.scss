@@ -35,7 +35,12 @@
         // visual
         background-image: url('./img/bgs/header-l.jpg');
         background-size: contain;
-        background-position: top right;
+        background-position: top center;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 60px 0;
     }
 }
 
@@ -66,6 +71,15 @@
         // box model
         align-items: flex-start;
     }
+
+    @include atDesktopM {
+        // box model
+        margin-bottom: 80px;
+
+        // visual
+        background-position: bottom left 100px;
+        background-size: 200px;
+    }
 }
 
 .header__logo {
@@ -79,6 +93,11 @@
     @include atTablet {
         // box model
         height: 100px;
+    }
+
+    @include atDesktopM {
+        // box model
+        height: 140px;
     }
 }
 
@@ -105,6 +124,11 @@
 
         // visual
         opacity: 1;
+    }
+
+    @include atDesktopM {
+        // box model
+        margin-right: -25px;
     }
 }
 
@@ -136,6 +160,12 @@
         // box model
         max-width: 450px;
     }
+
+    @include atDesktopM {
+        // box model
+        max-width: 540px;
+        margin-bottom: 80px;
+    }
 }
 
 .header__title {
@@ -157,6 +187,11 @@
         // typography
         font-size: 2.5rem;
     }
+
+    @include atDesktopM {
+        // typography
+        font-size: 3.5rem;
+    }
 }
 
 .header__subtitle {
@@ -171,6 +206,14 @@
     letter-spacing: 0.025em;
     line-height: 1.4;
     text-transform: uppercase;
+
+    @include atDesktopM {
+        // box model
+        font-size: 1.25rem;
+
+        // typography
+        letter-spacing: 0.05em;
+    }
 }
 
 .header__subtitle em {
@@ -230,6 +273,11 @@
         // positioning
         transform: none;
         left: 140px;
+    }
+
+    @include atDesktopM {
+        // box model
+        width: 260px;
     }
 }
 

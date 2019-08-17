@@ -60,6 +60,11 @@
         // typography
         font-size: 0.75rem;
     }
+
+    @include atDesktopM {
+        // typography
+        font-size: 0.95rem;
+    }
 }
 
 .feature__desc {
@@ -78,5 +83,10 @@
     @include atDesktopS {
         // typography
         font-size: 0.75rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 0.95rem;
     }
 }

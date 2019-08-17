@@ -21,6 +21,14 @@
         align-items: flex-start;
         padding: 20px 40px;
     }
+
+    @include atDesktopM {
+        // box model
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1120px;
+        padding: 20px 0;
+    }
 }
 
 .mobile__caption {
@@ -96,6 +104,11 @@
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: bottom -20px left 40px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 20px calc((100% - 1120px) / 2);
     }
 }
 

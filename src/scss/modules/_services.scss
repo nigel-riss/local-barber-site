@@ -18,6 +18,13 @@
         // box model
         display: flex;
     }
+
+    @include atTablet {
+        // box model
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1120px;
+    }
 }
 
 .services__left {

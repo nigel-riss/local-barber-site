@@ -14,5 +14,8 @@
 }
 
 .promos__content {
-
+    @include atDesktopM {
+        // box model
+        padding: 20px calc((100% - 1120px) / 2);
+    }
 }

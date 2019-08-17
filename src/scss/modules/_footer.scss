@@ -15,6 +15,14 @@
         align-items: center;
         padding: 40px;
     }
+
+    @include atDesktopM {
+        // box model
+        padding: 60px calc((100% - 1120px) / 2);
+
+        // visual
+        background-image: url('./img/bgs/footer-l.jpg');
+    }
 }
 
 .footer__brand-n-nav {
