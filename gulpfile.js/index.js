@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 const embedSVG = require('gulp-embed-svg');
 const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const server = require('browser-sync').create();
 const webpack = require('webpack-stream');
 
@@ -72,6 +73,15 @@ const renderPug = () => gulp.src(dirs.pug)
  */
 const compileSCSS = () => gulp.src(dirs.styles)
   .pipe(sass())
+  .pipe(autoprefixer({
+    overrideBrowserslist: [
+      "last 2 versions",
+      "> 0.5%",
+      "maintained node versions",
+      "not dead"
+    ]
+    // cascade: false,
+  }))
   .pipe(gulp.dest(dirs.docs))
   .pipe(server.reload({stream: true}));
 
