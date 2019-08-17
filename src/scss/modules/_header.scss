@@ -17,9 +17,9 @@
 
     @include atTablet {
         // box model
+        margin-bottom: 0;
         padding: 40px;
-        padding-bottom: 80px;
-        height: calc(100vh - 340px);
+        height: calc(100vh - 380px);
 
         // visual
         background-position: top right;
@@ -30,7 +30,7 @@
         // box model
         height: 100vh;
         max-height: 800px;
-        margin-bottom: 0;
+        // padding-bottom: 80px;
 
         // visual
         background-image: url('./img/bgs/header-l.jpg');
@@ -40,7 +40,8 @@
 
     @include atDesktopM {
         // box model
-        padding: 60px 0;
+        padding: 60px calc((100% - 1120px) / 2);
+
     }
 }
 
@@ -74,7 +75,7 @@
 
     @include atDesktopM {
         // box model
-        margin-bottom: 80px;
+        margin-bottom: 120px;
 
         // visual
         background-position: bottom left 100px;

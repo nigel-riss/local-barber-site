@@ -167,6 +167,11 @@
 }
 
 .mobile__image {
+    @include atTablet {
+        // box model
+        margin-top: -40px;
+    }
+
     @include atDesktopS {
         // box model
         flex-basis: 60%;
