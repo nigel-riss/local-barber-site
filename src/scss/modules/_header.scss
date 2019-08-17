@@ -24,6 +24,17 @@
         background-position: top right;
         background-size: 140%;
     }
+
+    @include atDesktopS {
+        // box model
+        height: 100vh;
+        max-height: 800px;
+
+        // visual
+        background-image: url('./img/bgs/header-l.jpg');
+        background-size: contain;
+        background-position: top right;
+    }
 }
 
 .header__top {
@@ -108,10 +119,13 @@
     text-transform: uppercase;
 
     @include atTablet {
-        // box model
-
         // typography
         font-size: 3rem;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 2.5rem;
     }
 }
 
@@ -154,9 +168,9 @@
     // typography
     text-align: center;
 
-    @include atTablet {
+    @include atDesktopS {
         // typography
-        // text-align: left;
+        text-align: left;
     }
 }
 
@@ -182,10 +196,10 @@
     // other
     pointer-events: none;
 
-    @include atTablet {
+    @include atDesktopS {
         // positioning
-        // transform: none;
-        // left: 140px;
+        transform: none;
+        left: 140px;
     }
 }
 
