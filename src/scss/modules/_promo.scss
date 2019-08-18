@@ -16,6 +16,11 @@
         flex-basis: 33%;
         margin: 0 10px;
     }
+
+    @include atDesktopL {
+        // box model
+        margin: 0 20px;
+    }
 }
 
 .promo__header {

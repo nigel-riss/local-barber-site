@@ -23,6 +23,11 @@
         // visual
         background-image: url('./img/bgs/footer-l.jpg');
     }
+
+    @include atDesktopL {
+        // box model
+        padding: 60px calc((100% - 1400px) / 2);
+    }
 }
 
 .footer__brand-n-nav {

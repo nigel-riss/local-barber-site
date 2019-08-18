@@ -19,10 +19,16 @@
         // box model
         margin: 0;
         max-width: inherit;
+        padding: 0;
         padding-right: 15px;
 
         // typography
         text-align: left;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding-right: 60px;
     }
 }
 
@@ -65,6 +71,11 @@
         // typography
         font-size: 0.95rem;
     }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1rem;
+    }
 }
 
 .feature__desc {
@@ -88,5 +99,10 @@
     @include atDesktopM {
         // typography
         font-size: 0.95rem;
+    }
+
+    @include atDesktopL {
+        // typography
+        font-size: 1rem;
     }
 }

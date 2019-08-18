@@ -8,11 +8,28 @@
         padding: 40px;
         margin-bottom: 40px;
     }
+
+    @include atDesktopL {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        padding: 40px 0;
+    }
 }
 
 .partners__header {
     // box model
     margin-bottom: 20px;
+
+    @include atDesktopL {
+        // box model
+        margin-bottom: -80px;
+        margin-right: 60px;
+    }
 }
 
 .partners__content {
@@ -33,6 +50,11 @@
     @include atDesktopM {
         // box model
         padding: 20px calc((100% - 1120px) / 2);
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 20px calc((100% - 1400px) / 2);
     }
 }
 

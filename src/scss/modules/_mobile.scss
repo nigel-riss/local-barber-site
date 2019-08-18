@@ -29,6 +29,11 @@
         max-width: 1120px;
         padding: 20px 0;
     }
+
+    @include atDesktopL {
+        // box model
+        max-width: 1400px;
+    }
 }
 
 .mobile__caption {
@@ -109,6 +114,11 @@
     @include atDesktopM {
         // box model
         padding: 20px calc((100% - 1120px) / 2);
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 20px calc((100% - 1400px) / 2);
     }
 }
 

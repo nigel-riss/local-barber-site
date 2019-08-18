@@ -20,6 +20,17 @@
 
     // visual
     transition: all 0.25s ease-out;
+
+    @include atDesktopL {
+        // box model
+        margin-right: 30px;
+
+        // typography
+        line-height: 50px;
+
+        // border
+        border-radius: 26px;
+    }
 }
 
 .mobile-button:hover {

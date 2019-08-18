@@ -25,6 +25,11 @@
         width: 100%;
         max-width: 1120px;
     }
+
+    @include atDesktopL {
+        // box model
+        max-width: 1400px;
+    }
 }
 
 .services__left {

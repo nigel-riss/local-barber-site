@@ -7,6 +7,17 @@
         // box model
         padding: 30px;
     }
+
+    @include atDesktopL {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+        padding: 40px 0;
+    }
 }
 
 .promos__header {
@@ -17,5 +28,11 @@
     @include atDesktopM {
         // box model
         padding: 20px calc((100% - 1120px) / 2);
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 0;
+        padding-left: 120px;
     }
 }

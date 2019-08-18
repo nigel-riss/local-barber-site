@@ -6,41 +6,35 @@
     border-collapse: collapse;
 }
 
-.prices__row {
+.prices td {
+    // box model
+    padding: 0;
+    padding-bottom: 0.35rem;
+    padding-top: 1.25rem;
+    vertical-align: top;
 
+    // typography
+    font-weight: 600;
+    line-height: 1.25;
+
+    // border
+    border-bottom: 1px solid $darkGrey;
+
+    @include atDesktopL {
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .prices td:first-child {
     // box model
-    padding: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
     padding-right: 20px;
-    vertical-align: top;
-
-    // typography
-    font-weight: 600;
-    line-height: 1.25;
-
-    // border
-    border-bottom: 1px solid $darkGrey;
 }
 
 .prices td:last-child {
-    // box model
-    padding: 0;
-    padding-bottom: 5px;
-    padding-top: 20px;
-    vertical-align: top;
-
     // typography
     white-space: nowrap;
-    font-weight: 600;
-    line-height: 1.25;
     text-align: right;
-
-    // border
-    border-bottom: 1px solid $darkGrey;
 }
 
 .prices td:last-child::after {

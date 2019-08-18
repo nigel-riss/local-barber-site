@@ -21,6 +21,11 @@
         // box model
         flex-basis: 20%;
     }
+
+    @include atDesktopL {
+        // box model
+        max-width: 250px;
+    }
 }
 
 .partner:hover {

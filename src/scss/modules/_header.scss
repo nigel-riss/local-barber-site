@@ -41,7 +41,12 @@
     @include atDesktopM {
         // box model
         padding: 60px calc((100% - 1120px) / 2);
+    }
 
+    @include atDesktopL {
+        // box model
+        padding: 60px calc((100% - 1400px) / 2);
+        max-height: 1000px;
     }
 }
 
@@ -124,6 +129,7 @@
     @include atDesktopS {
         // positioning
         position: relative;
+        transform: none;
         
         // visual
         opacity: 1;
@@ -176,6 +182,11 @@
         // box model
         max-width: 540px;
         margin-bottom: 80px;
+    }
+
+    @include atDesktopL {
+        // box model
+        max-width: 600px;
     }
 }
 

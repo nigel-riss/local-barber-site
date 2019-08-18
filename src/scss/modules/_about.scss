@@ -50,6 +50,7 @@
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.025em;
+    line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
 
@@ -88,6 +89,11 @@
 
     // border
     border-left: 1px solid $red;
+
+    @include atDesktopL {
+        // typography
+        line-height: 1.75;
+    }
 }
 
 .about__photo {
