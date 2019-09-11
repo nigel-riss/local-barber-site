@@ -17,7 +17,7 @@
 
     @include atTablet {
         // box model
-        margin-bottom: 0;
+        margin-bottom: 40px;
         padding: 40px;
         height: calc(100vh - 380px);
 
@@ -67,6 +67,7 @@
     @include atTablet {
         // box model
         padding-bottom: 20px;
+        margin-bottom: 80px;
 
         // visual
         background-position: bottom left 60px;
@@ -304,6 +305,73 @@
 }
 
 .header__social {
-    
+    // positioning
+    position: absolute;
+    left: 20px;
+    top: 110px;
+
+    // box model
+    display: flex;
+
+
+    @include atTablet {
+        // positioning
+        left: 40px;
+        top: 160px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: calc((100% - 1120px) / 2);
+        top: 240px;
+    }
+
+    @include atDesktopS {
+        // positioning
+        left: calc((100% - 1400px) / 2);
+        top: 240px;
+    }
 }
 
+
+.header__social-link {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    height: 24px;
+    width: 24px;
+    margin-right: 1rem;
+    margin-bottom: 16px;
+
+    // visual
+    transition: all 0.25s ease-out;
+
+    @include atTablet {
+        // box model
+        height: 28px;
+        width: 28px;
+    }
+}
+
+.header__social-link:hover {
+    // visual
+    opacity: 0.5;
+}
+
+.header__social-text {
+    // typography
+    font-size: 0;
+}
+
+.header__social-icon {
+    // box model
+    height: 100%;
+    width: 100%;
+
+}
+
+.header__social-icon svg {
+    // box model
+    height: 100%;
+    width: 100%;
+}
