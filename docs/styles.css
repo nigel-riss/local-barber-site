@@ -1326,15 +1326,50 @@ section {
 .barber__photo {
   position: absolute; }
 
+@media (min-width: 700px) {
+  .contacts {
+    position: relative;
+    height: 600px; } }
+
+@media (min-width: 1000px) {
+  .contacts {
+    height: 560px; } }
+
+.contacts__map {
+  width: 100%; }
+  @media (min-width: 700px) {
+    .contacts__map {
+      height: 100%; } }
+
+@media (min-width: 700px) {
+  .contacts__card {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    width: 400px; } }
+
+@media (min-width: 1000px) {
+  .contacts__card {
+    top: -90px;
+    width: 500px; } }
+
+[class*="-inner-panes"] {
+  filter: saturate(0%) invert(100%);
+  -ms-filter: saturate(0%) invert(100%);
+  -webkit-filter: saturate(0%) invert(100%);
+  -moz-filter: saturate(0%) invert(100%);
+  -o-filter: saturate(0%) invert(100%); }
+
 .c-card {
   margin: 20px;
-  padding: 50px 25px;
+  padding: 40px 25px;
   color: #0a0a0a;
   text-align: center;
+  font-size: 0.85rem;
   background-color: #ffffff; }
 
 .c-card__image {
-  height: 92px;
+  height: 64px;
   margin-bottom: 20px;
   text-align: center; }
 
@@ -1345,7 +1380,7 @@ section {
   margin-bottom: 60px; }
 
 .c-card__title {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.025em;
   text-transform: uppercase; }
@@ -1363,7 +1398,7 @@ section {
   letter-spacing: 0.025em; }
 
 .c-card__deco {
-  height: 52px;
+  height: 42px;
   margin-top: -10px;
   opacity: 0.5; }
 
@@ -1378,7 +1413,7 @@ section {
 
 .c-card__c-value {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   color: #949698;
   font-weight: 600;
   line-height: 1.5; }
@@ -1401,14 +1436,15 @@ section {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 40px; } }
+      padding: 40px;
+      padding-top: 80px; } }
   @media (min-width: 1200px) {
     .footer {
-      padding: 60px calc((100% - 1120px) / 2);
+      padding: 80px calc((100% - 1120px) / 2);
       background-image: url("./img/bgs/footer-l.jpg"); } }
   @media (min-width: 1500px) {
     .footer {
-      padding: 60px calc((100% - 1400px) / 2); } }
+      padding: 80px calc((100% - 1400px) / 2); } }
 
 .footer__brand-n-nav {
   display: flex;

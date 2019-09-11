@@ -14,11 +14,12 @@
         justify-content: space-between;
         align-items: center;
         padding: 40px;
+        padding-top: 80px;
     }
 
     @include atDesktopM {
         // box model
-        padding: 60px calc((100% - 1120px) / 2);
+        padding: 80px calc((100% - 1120px) / 2);
 
         // visual
         background-image: url('./img/bgs/footer-l.jpg');
@@ -26,7 +27,7 @@
 
     @include atDesktopL {
         // box model
-        padding: 60px calc((100% - 1400px) / 2);
+        padding: 80px calc((100% - 1400px) / 2);
     }
 }
 

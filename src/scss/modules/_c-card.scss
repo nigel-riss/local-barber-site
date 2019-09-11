@@ -1,11 +1,12 @@
 .c-card {
     // box model
     margin: 20px;
-    padding: 50px 25px;
+    padding: 40px 25px;
 
     // typography
     color: $black;
     text-align: center;
+    font-size: 0.85rem;
 
     // visual
     background-color: $white;
@@ -13,9 +14,14 @@
 
 .c-card__image {
     // box model
-    height: 92px;
+    height: 64px;
     margin-bottom: 20px;
     text-align: center;
+
+    // @include atDesktopS {
+    //     // box model
+    //     height: 92px;
+    // }
 }
 
 .c-card__image svg {
@@ -30,7 +36,7 @@
 
 .c-card__title {
     // typography
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.025em;
     text-transform: uppercase;
@@ -56,7 +62,7 @@
 
 .c-card__deco {
     // box model
-    height: 52px;
+    height: 42px;
     margin-top: -10px;
 
     // visual
@@ -85,7 +91,7 @@
 .c-card__c-value {
     // box model
     margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 
     // typography
     color: $grey;

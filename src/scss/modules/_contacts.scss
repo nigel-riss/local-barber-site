@@ -1,3 +1,52 @@
 .contacts {
+    @include atTablet {
+        // positioning
+        position: relative;
+
+        // box model
+        height: 600px;
+    }
+
+    @include atDesktopS {
+        // box model
+        height: 560px;
+    }
+}
+
+.contacts__map {
+    // box model
+    width: 100%;
+
+    @include atTablet {
+        // box model
+        height: 100%;
+    }
+}
+
+.contacts__card {
+    @include atTablet {
+        // positioning
+        position: absolute;
+        top: -60px;
+        right: 0;
+
+        // box model
+        // display: none;
+        width: 400px;
+    }
+
+    @include atDesktopS {
+        top: -90px;
     
+        // box model
+        width: 500px;
+    }
+}
+
+[class *="-inner-panes"] {
+    filter: saturate(0%) invert(100%);
+    -ms-filter: saturate(0%) invert(100%);
+    -webkit-filter: saturate(0%) invert(100%);
+    -moz-filter: saturate(0%) invert(100%);
+    -o-filter: saturate(0%) invert(100%);
 }
