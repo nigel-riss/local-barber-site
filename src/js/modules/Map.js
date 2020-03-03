@@ -7,7 +7,7 @@ class Map {
 
   addMap() {
     this.map = new ymaps.Map(document.querySelector('.contacts__map'), {
-      center: [55.34969,86.10720],
+      center: [55.3487582,86.09],
       zoom: 17,
       controls: [],
     });
@@ -17,7 +17,7 @@ class Map {
       // 'multiTouch',
     ]);
 
-    const marker = new ymaps.Placemark([55.34969606936035,86.10520899999995]);
+    const marker = new ymaps.Placemark([55.3487582,86.0875]);
     this.map.geoObjects.add(marker);
   }
 }

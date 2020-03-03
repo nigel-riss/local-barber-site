@@ -399,12 +399,15 @@ section {
       top: 160px; } }
   @media (min-width: 1000px) {
     .header__social {
+      left: 40px;
+      top: 240px; } }
+  @media (min-width: 1200px) {
+    .header__social {
       left: calc((100% - 1120px) / 2);
       top: 240px; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1500px) {
     .header__social {
-      left: calc((100% - 1400px) / 2);
-      top: 240px; } }
+      left: calc((100% - 1400px) / 2); } }
 
 .header__social-link {
   display: inline-block;

@@ -322,14 +322,19 @@
 
     @include atDesktopS {
         // positioning
+        left: 40px;
+        top: 240px;
+    }
+
+    @include atDesktopM {
+        // positioning
         left: calc((100% - 1120px) / 2);
         top: 240px;
     }
 
-    @include atDesktopS {
+    @include atDesktopL {
         // positioning
         left: calc((100% - 1400px) / 2);
-        top: 240px;
     }
 }
 
