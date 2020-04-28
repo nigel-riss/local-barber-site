@@ -1056,7 +1056,7 @@ section {
   background-color: #343435; }
   @media (min-width: 700px) {
     .promo {
-      flex-basis: 33%;
+      flex-basis: 45%;
       margin: 0 10px; } }
   @media (min-width: 1500px) {
     .promo {
