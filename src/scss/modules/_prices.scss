@@ -29,6 +29,11 @@
 .prices td:first-child {
     // box model
     padding-right: 20px;
+
+    em {
+        color: $grey;
+        font-weight: 400;
+    }
 }
 
 .prices td:last-child {

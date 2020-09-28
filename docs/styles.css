@@ -1006,6 +1006,9 @@ section {
 
 .prices td:first-child {
   padding-right: 20px; }
+  .prices td:first-child em {
+    color: #949698;
+    font-weight: 400; }
 
 .prices td:last-child {
   white-space: nowrap;
@@ -1065,7 +1068,8 @@ section {
 .promo__header {
   position: relative;
   z-index: 2;
-  padding: 25px; }
+  padding: 25px;
+  background-color: rgba(10, 10, 10, 0.5); }
   @media (min-width: 700px) {
     .promo__header {
       display: flex;
@@ -1091,6 +1095,8 @@ section {
 .promo__desc {
   margin: 0;
   line-height: 1.5; }
+  .promo__desc strong {
+    font-weight: 600; }
 
 .promo__image {
   position: absolute;

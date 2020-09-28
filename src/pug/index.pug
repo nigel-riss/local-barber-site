@@ -6,7 +6,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Local Barbershop
 
-        link(rel="stylesheet", href="styles.css?v=2")
+        link(rel="stylesheet", href="styles.css?v=3")
         
         include ./modules/_favicon.pug
         
@@ -131,11 +131,17 @@ html(lang="en")
                             td Стрижка мужская
                             td 950
                         tr.prices__row
-                            td Стрижка детская (до&nbsp;12&nbsp;лет)
+                            td Коррекция стрижки <em>(повторная стрижка в течении 30 дней)</em>
+                            td 700
+                        tr.prices__row
+                            td Стрижка детская <em>(до&nbsp;12&nbsp;лет)</em>
                             td 650
                         tr.prices__row
-                            td Стрижка под машинку (одна насадка)
+                            td Стрижка машинкой <em>(2-3 насадки, без применения ножниц)</em>
                             td 500
+                        tr.prices__row
+                            td Стрижка студентам <em>(очной формы обучения по вторникам и четвергам)</em>
+                            td 700
                         tr.prices__row
                             td Укладка
                             td 350
@@ -160,6 +166,12 @@ html(lang="en")
                         tr.prices__row
                             td Тонирование бороды
                             td 600
+                        tr.prices__row
+                            td Удаление волос воском. Комплекс <em>(нос + уши + коррекция бровей)</em>
+                            td 500
+                        tr.prices__row
+                            td Удаление волос воском. Одна позиция <em>(нос, уши или коррекция бровей)</em>
+                            td 250
 
             section.promos#promos
                 header.promos__header
@@ -176,15 +188,15 @@ html(lang="en")
                                 .promo__caption
                                     h3.promo__title Друг + Друг
                                     p.promo__desc Стригитесь сами и&nbsp;приводите друзей. Вместе веселее и&nbsp;дешевле.
-                            .promo__image: img(src="./img/promos/promo1.jpg", alt="")
+                            .promo__image: img(src="./img/promos/promo2.jpg", alt="")
 
-                        //- article.promo
-                        //-     header.promo__header
-                        //-         p.promo__value -10%
-                        //-         .promo__caption
-                        //-             h3.promo__title Первое посещение
-                        //-             p.promo__desc Скидка на услуги при первом посещени барбершопа или по флаеру <br>(Не суммируется с&nbsp;другими акциями)
-                        //-     .promo__image: img(src="./img/promos/promo2.jpg", alt="")
+                        article.promo
+                            header.promo__header
+                                p.promo__value 700₽
+                                .promo__caption
+                                    h3.promo__title Стрижка студентам
+                                    p.promo__desc Стрижка для&nbsp;студентов очной формы обучения. Акция проходит по&nbsp;<strong>вторникам</strong> и&nbsp;<strong>четвергам</strong><br>(По&nbsp;предъявлению студенческого билета)
+                            .promo__image: img(src="./img/promos/promo1.jpg", alt="")
 
                         article.promo
                             header.promo__header
@@ -312,5 +324,5 @@ html(lang="en")
                     .footer__legals-item Оставаясь на сайте пользователь обязуется соблюдать <a href="">пользовательское соглашение</a>
                 p.footer__copy &copy; 2019 Local Barbershop
 
-        script(src="scripts.js?v=2")
+        script(src="scripts.js?v=3")
         script(src="https://w247743.yclients.com/widgetJS")
