@@ -1094,7 +1094,8 @@ section {
 
 .promo__desc {
   margin: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 0.9rem; }
   .promo__desc strong {
     font-weight: 600; }
 
