@@ -1,6 +1,6 @@
 {
   "name": "local-barber-site",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Site for Local Barbershop",
   "main": "gulpfile.js",
   "directories": {

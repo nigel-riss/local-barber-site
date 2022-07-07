@@ -33,10 +33,11 @@ const webpackConfig = {
 
   output: {
     filename: '[name].js',
+    path: path.resolve(__dirname, `docs`),
   },
 
   mode: 'production',
-  mode: 'development',
+  // mode: 'development',
 
   module: {
     rules: [

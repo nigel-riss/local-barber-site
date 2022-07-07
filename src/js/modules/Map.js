@@ -6,6 +6,7 @@ class Map {
   }
 
   addMap() {
+    console.log(`start map`);
     this.map = new ymaps.Map(document.querySelector('.contacts__map'), {
       center: [55.3487582,86.09],
       zoom: 17,

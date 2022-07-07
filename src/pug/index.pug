@@ -6,17 +6,18 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Local Barbershop
 
-        link(rel="stylesheet", href="styles.css?v=4")
+        link(rel="stylesheet", href="styles.css?v=5")
         
         include ./modules/_favicon.pug
         
 
         <script src="https://api-maps.yandex.ru/2.1/?apikey=7206f160-54d3-4664-881c-733097536e51&lang=ru_RU" type="text/javascript">
         </script>
+
     body
         header.header
             .header__top
-                .header__logo: img(src="./img/logo.svg", alt="Логотип Local Barbershop")
+                .header__logo: img(src="./img/logo.svg", alt="Логотип Local Barbershop") 
 
                 .header__nav
                     nav.main-nav
@@ -44,13 +45,13 @@ html(lang="en")
                     a.button.ms_booking(href="#") Запись онлайн
 
             .header__social
-                a.header__social-link(href="https://www.instagram.com/local_barbershop/")
+                a.header__social-link(href="https://www.instagram.com/local_barbershop/") 
                     p.header__social-text instagram
-                    img.header__social-icon(src="./img/icons/instagram.svg", alt="instagram")
+                    img.header__social-icon(src="./img/icons/instagram.svg", alt="instagram") 
 
-                a.header__social-link(href="https://vk.com/local_barbershop")
+                a.header__social-link(href="https://vk.com/local_barbershop") 
                     p.header__social-text facebook
-                    img.header__social-icon(src="./img/icons/vk.svg", alt="vkontakte")
+                    img.header__social-icon(src="./img/icons/vk.svg", alt="vkontakte") 
 
         main
             //- section.mobile
@@ -72,17 +73,17 @@ html(lang="en")
                 .container
                     .selling-features__content
                         article.feature
-                            .feature__icon: img(src="./img/icons/barber.svg", alt="")
+                            .feature__icon: img(src="./img/icons/barber.svg", alt="") 
                             h3.feature__title Барбершоп с твоим характером
                             p.feature__desc Local Barbershop - для&nbsp;настоящих ценителей стиля и&nbsp;качества
 
                         article.feature
-                            .feature__icon: img(src="./img/icons/trophy.svg", alt="")
+                            .feature__icon: img(src="./img/icons/trophy.svg", alt="") 
                             h3.feature__title Наша команда профессионалов
                             p.feature__desc Опытные мастера, знающие как&nbsp;подчеркнуть твою индивидуальность
 
                         article.feature
-                            .feature__icon: img(src="./img/icons/razor.svg", alt="")
+                            .feature__icon: img(src="./img/icons/razor.svg", alt="") 
                             h3.feature__title Профессиональное оборудование
                             p.feature__desc Только качественное оборудоване и&nbsp;метериалы для&nbsp;превосходного результата
 
@@ -105,61 +106,65 @@ html(lang="en")
                     .section-header
                         p.section-header__subtitle <em>Наши</em> услуги
                         h2.section-header__title Прайс
-                        .section-header__deco: img(src="./img/decos/price-list-u.svg", alt="Прайс лист")
+                        .section-header__deco: img(src="./img/decos/price-list-u.svg", alt="Прайс лист") 
 
                 .price-list__content
                     table.prices
                         tr.prices__row
-                            td Стрижка + оформление бороды машинкой
-                            td 1400
+                            td Стрижка мужская
+                            td 1&thinsp;000
                         tr.prices__row
-                            td Стрижка + бритьё опасным лезвием
-                            td 1800
+                            td Стрижка машинкой <em>(2-3 насадки, без применения ножниц)</em>
+                            td 800
                         tr.prices__row
                             td Оформление бороды машинкой
                             td 600
                         tr.prices__row
                             td Бритьё бороды опасным лезвием
-                            td 950
-                        tr.prices__row.prices__row--best
-                            td Опасное бритьё
-                            td 1000
+                            td 1&thinsp;000
                         tr.prices__row
-                            td Стрижка мужская
-                            td 1000
+                            td Стрижка + оформление бороды машинкой
+                            td 1&thinsp;400 — 1&thinsp;600
                         tr.prices__row
-                            td Стрижка детская <em>(до&nbsp;12&nbsp;лет)</em>
-                            td 650
-                        tr.prices__row
-                            td Стрижка машинкой <em>(2-3 насадки, без применения ножниц)</em>
-                            td 500
-                        tr.prices__row
-                            td Стрижка студентам <em>(очной формы обучения по вторникам)</em>
-                            td 850
+                            td Стрижка детская <em>(до&nbsp;14&nbsp;лет)</em>
+                            td 800
                         tr.prices__row
                             td Укладка
                             td 350
                         tr.prices__row
-                            td Мытьё головы
-                            td 200
-                        tr.prices__row
-                            td Хайр тату
-                            td от 300
-                        tr.prices__row
-                            td Отец + сын
-                            td 1500
-                        tr.prices__row
-                            td Друг + Друг
-                            td 1800
-                        tr.prices__row
                             td Тонирование волос
-                            td 1000
+                            td 1&thinsp;000
                         tr.prices__row
                             td Тонирование бороды
                             td 600
                         tr.prices__row
+                            td Отец + сын
+                            td 1&thinsp;700
+                        tr.prices__row
+                            td Окантовка и укладка
+                            td 600
+                        tr.prices__row
+                            td Друг + Друг
+                            td 1800
+                        tr.prices__row
+                            td Мытьё головы
+                            td 200
+                        tr.prices__row
+                            td Стрижка + бритьё опасным лезвием
+                            td 2&thinsp;000
+                        tr.prices__row
+                            td Бритьё головы опасным лезвием
+                            td 1&thinsp;700
+                        tr.prices__row
                             td Удаление волос воском. <em>(нос + уши + коррекция бровей)</em>
                             td 250
+
+                        tr.prices__row
+                            td Пилинг <em>(уход за кожей головы + массаж кожи головы)</em>
+                            td от 500
+                        tr.prices__row
+                            td Хайр тату
+                            td от 300
 
             section.promos#promos
                 header.promos__header
@@ -178,7 +183,7 @@ html(lang="en")
                                     p.promo__desc Стригитесь сами и&nbsp;приводите друзей. Вместе веселее и&nbsp;дешевле.
                             .promo__image: img(src="./img/promos/promo2.jpg", alt="")
 
-                        article.promo
+                        //- article.promo
                             header.promo__header
                                 p.promo__value 850₽
                                 .promo__caption
@@ -188,7 +193,7 @@ html(lang="en")
 
                         article.promo
                             header.promo__header
-                                p.promo__value 1 500₽
+                                p.promo__value 1 700₽
                                 .promo__caption
                                     h3.promo__title Отец + Сын
                                     p.promo__desc Стрижка у одного мастера со&nbsp;скидкой
@@ -228,7 +233,7 @@ html(lang="en")
                             header.service__header
                                 .service__deco: img(src="./img/decos/mens-goods.svg", alt="Уход")
                                 h3.service__title Косметика
-                                p.service__subtitle Для ухода за волосами головы и бородой
+                                p.service__subtitle Для ухода за волосами головы и&nbsp;бородой
                             .service__image: img(src="./img/bgs/goods.jpg", alt="Товады для ухода")
 
                     .services__right
@@ -267,15 +272,15 @@ html(lang="en")
 
 
             section.contacts#contacts
-                .contacts__map
-                .contacts__card
+                .contacts__map 
+                .contacts__card 
                     .c-card
                         .c-card__image: img(src="./img/logo-black.svg", alt="")
                         .c-card__caption
                             h2.c-card__title <em>Наши</em> Контакты
                             p.c-card__text По всем, интересующим Вас, вопросам, Вы можете обратиться к менеджеру по телефону или отправить нам письмо на электронный адрес.
                             p.c-card__subtitle До встречи в&nbsp;LOCAL&nbsp;BARBERSHOP
-                            .c-card__deco: img(src="./img/decos/mens-goods.svg", alt="Men's goods deco")
+                            .c-card__deco: img(src="./img/decos/mens-goods.svg", alt="Men's goods deco") 
                         .c-card__contacts
                             h3.c-card__c-name Режим работы
                             p.c-card__c-value
@@ -310,7 +315,7 @@ html(lang="en")
                 .footer__legals
                     .footer__legals-item <a href="">Политика конфиденциальности</a> в&nbsp;отношении обработки данных получаемых сайтом
                     .footer__legals-item Оставаясь на сайте пользователь обязуется соблюдать <a href="">пользовательское соглашение</a>
-                p.footer__copy &copy; 2019 Local Barbershop
+                p.footer__copy &copy; 2019—2022 Local Barbershop
 
-        script(src="scripts.js?v=3")
-        script(src="https://w247743.yclients.com/widgetJS")
+        script(src="scripts.js?v=5") 
+        script(src="https://w247743.yclients.com/widgetJS") 
