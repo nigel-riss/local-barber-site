@@ -20,15 +20,17 @@
   },
   "homepage": "https://github.com/nigel-riss/local-barber-site#readme",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "browser-sync": "^2.26.12",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-embed-svg": "^1.1.5",
-    "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.2",
-    "webpack-stream": "^5.2.1"
+    "@babel/core": "7.18.6",
+    "@babel/preset-env": "7.18.6",
+    "babel-cli": "6.26.0",
+    "babel-loader": "8.2.5",
+    "browser-sync": "2.27.10",
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-embed-svg": "1.4.8",
+    "gulp-pug": "5.0.0",
+    "gulp-sass": "5.1.0",
+    "sass": "1.53.0",
+    "webpack-stream": "7.0.0"
   }
 }
