@@ -1355,11 +1355,11 @@ section {
 @media (min-width: 700px) {
   .promos-slider {
     display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 1500px) {
   .promos-slider {
-    justify-content: flex-end;
     width: 100%;
     height: 360px;
   }
@@ -1916,6 +1916,12 @@ section {
   text-align: center;
   text-transform: uppercase;
 }
+@media (min-width: 1000px) {
+  .footer__copy {
+    margin-top: 2.5rem;
+  }
+}
+
 .footer__nav {
   flex-basis: 45%;
 }
