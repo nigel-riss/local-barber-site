@@ -74,3 +74,27 @@ section {
 //         background: transparent !important;
 //     }
 // }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $red transparent;
+  }
+  
+  // /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: $darkGrey;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--violet);
+    border-radius: 10px;
+    border: none;
+  }
+  

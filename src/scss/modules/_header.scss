@@ -70,7 +70,7 @@
         margin-bottom: 80px;
 
         // visual
-        background-position: bottom left 60px;
+        background-position: bottom left 100px;
         background-size: 160px;
     }
 
@@ -84,7 +84,7 @@
         margin-bottom: 120px;
 
         // visual
-        background-position: bottom left 100px;
+        background-position: bottom left 140px;
         background-size: 200px;
     }
 }
@@ -96,6 +96,7 @@
 
     // box model
     height: 72px;
+    // border: 2px solid fuchsia;
 
     @include atTablet {
         // box model
@@ -112,6 +113,7 @@
 .header__logo svg {
     // box model
     height: 100%;
+    // width: 100%;
 }
 
 .header__nav {
