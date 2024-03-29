@@ -6,6 +6,7 @@ html {
 
     // visual
     background-color: $black;
+    scroll-behavior: smooth;
 
     @include atDesktopL {
         // typography
@@ -30,7 +31,7 @@ body {
 
 section {
     // box model
-    max-width: 405px;
+    // max-width: 405px;
     margin: 0 auto;
 
     @include atTablet {

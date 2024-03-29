@@ -8,16 +8,21 @@
         padding: 30px;
     }
 
-    @include atDesktopL {
+    @include atDesktopS {
         // box model
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1400px;
-        margin: 0 auto;
-        margin-bottom: 120px;
-        padding: 40px 0;
+        padding: 120px 40px;
     }
+
+    // @include atDesktopL {
+    //     // box model
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     max-width: 1400px;
+    //     margin: 0 auto;
+    //     margin-bottom: 120px;
+    //     padding: 40px 0;
+    // }
 }
 
 .promos__header {
@@ -30,9 +35,11 @@
         padding: 20px calc((100% - 1120px) / 2);
     }
 
-    @include atDesktopL {
-        // box model
-        padding: 0;
-        padding-left: 120px;
-    }
+    // @include atDesktopL {
+    //     // box model
+    //     flex-basis: fill;
+    //     flex-grow: 2;
+    //     padding: 0;
+    //     padding-left: 120px;
+    // }
 }

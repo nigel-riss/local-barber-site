@@ -15,7 +15,9 @@
 }
 
 .price-list__header {
-
+    // positioning
+    position: relative;
+    z-index: 3;
 }
 
 .price-list__content {
