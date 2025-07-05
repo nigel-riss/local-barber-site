@@ -65,6 +65,11 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @include atDesktopS {
+    // box model
+    align-items: center;
+  }
 }
 
 .about__caption {
@@ -74,6 +79,11 @@
   @include atTablet {
     // box model
     flex-basis: 47.5%;
+  }
+
+  @include atDesktopS {
+    // box model
+    margin-bottom: 0;
   }
 }
 

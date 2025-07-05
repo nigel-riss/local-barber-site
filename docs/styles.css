@@ -1086,6 +1086,11 @@ section {
     justify-content: space-between;
   }
 }
+@media (min-width: 1000px) {
+  .about__content {
+    align-items: center;
+  }
+}
 
 .about__caption {
   margin-bottom: 40px;
@@ -1093,6 +1098,11 @@ section {
 @media (min-width: 700px) {
   .about__caption {
     flex-basis: 47.5%;
+  }
+}
+@media (min-width: 1000px) {
+  .about__caption {
+    margin-bottom: 0;
   }
 }
 
@@ -1330,8 +1340,15 @@ section {
   padding-right: 20px;
 }
 .prices td:first-child em {
+  display: inline-block;
   color: #949698;
+  font-size: 0.75em;
   font-weight: 400;
+}
+@media (min-width: 1000px) {
+  .prices td:first-child em {
+    font-size: 0.875em;
+  }
 }
 
 .prices td:last-child {

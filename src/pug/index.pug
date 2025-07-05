@@ -6,7 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Loclame Barbershop
 
-    link(rel="stylesheet", href="styles.css?v=6")
+    link(rel="stylesheet", href="styles.css?v=7")
 
     include ./modules/_favicon.pug
 
@@ -17,7 +17,7 @@ html(lang="en")
   body
     header.header
       .header__top
-        .header__logo: img(src="./img/logo.svg", alt="Логотип Loclame Barbershop") 
+        .header__logo: img(src="./img/logo.svg", alt="Логотип Loclame Barbershop")
 
         .header__nav
           nav.main-nav
@@ -45,13 +45,13 @@ html(lang="en")
           a.button.ms_booking(href="#") Запись онлайн
 
       .header__social
-        //- a.header__social-link(href="https://www.instagram.com/local_barbershop/") 
+        //- a.header__social-link(href="https://www.instagram.com/local_barbershop/")
           p.header__social-text instagram
-          img.header__social-icon(src="./img/icons/instagram.svg", alt="instagram") 
+          img.header__social-icon(src="./img/icons/instagram.svg", alt="instagram")
 
-        a.header__social-link(href="https://vk.com/loclame_barbershop") 
+        a.header__social-link(href="https://vk.com/loclame_barbershop")
           p.header__social-text vkontakte
-          img.header__social-icon(src="./img/icons/vk.svg", alt="vkontakte") 
+          img.header__social-icon(src="./img/icons/vk.svg", alt="vkontakte")
 
     main
       //- section.mobile
@@ -73,17 +73,17 @@ html(lang="en")
         .container
           .selling-features__content
             article.feature
-              .feature__icon: img(src="./img/icons/barber.svg", alt="") 
+              .feature__icon: img(src="./img/icons/barber.svg", alt="")
               h3.feature__title Барбершоп с твоим характером
               p.feature__desc Loclame Barbershop — для&nbsp;настоящих ценителей стиля и&nbsp;качества
 
             article.feature
-              .feature__icon: img(src="./img/icons/trophy.svg", alt="") 
+              .feature__icon: img(src="./img/icons/trophy.svg", alt="")
               h3.feature__title Наша команда профессионалов
               p.feature__desc Опытные мастера, знающие как&nbsp;подчеркнуть твою индивидуальность
 
             article.feature
-              .feature__icon: img(src="./img/icons/razor.svg", alt="") 
+              .feature__icon: img(src="./img/icons/razor.svg", alt="")
               h3.feature__title Профессиональное оборудование
               p.feature__desc Только качественное оборудоване и&nbsp;метериалы для&nbsp;превосходного результата
 
@@ -106,66 +106,66 @@ html(lang="en")
           .section-header
             p.section-header__subtitle <em>Наши</em> услуги
             h2.section-header__title Прайс
-            .section-header__deco: img(src="./img/decos/price-list-u.svg", alt="Прайс лист") 
+            .section-header__deco: img(src="./img/decos/price-list-u.svg", alt="Прайс лист")
 
         .price-list__content
           table.prices
             tr.prices__row
-              td Стрижка мужская
-              td 1&thinsp;300
+              td Стрижка мужская <em>(40 мин)</em>
+              td 1&thinsp;500
             tr.prices__row
-              td Стрижка машинкой <em>(2-3 насадки, без применения ножниц)</em>
-              td 1000
+              td Стрижка машинкой <em>(30 мин, 2-3 насадки, без применения ножниц)</em>
+              td 1200
             tr.prices__row
-              td Оформление бороды машинкой
-              td 600 — 800
+              td Оформление бороды машинкой <em>(30 мин)</em>
+              td 800 — 1&thinsp;000
             tr.prices__row
-              td Бритьё бороды опасным лезвием
-              td 1&thinsp;000
+              td Бритьё бороды опасным лезвием <em>(60 мин)</em>
+              td 1&thinsp;200 — 1&thinsp;500
             tr.prices__row
-              td Стрижка + оформление бороды машинкой
-              td 1&thinsp;700 — 2&thinsp;000
+              td Стрижка + оформление бороды машинкой <em>(60 мин)</em>
+              td 1&thinsp;800 — 2&thinsp;200
             tr.prices__row
-              td Стрижка детская <em>(до&nbsp;12&nbsp;лет)</em>
-              td 1000
-            tr.prices__row
-              td Укладка
-              td 350
-            tr.prices__row
-              td Камуфляж седины (голова)
+              td Детская стрижка <em>(30 мин, до&nbsp;12&nbsp;лет)</em>
               td 1&thinsp;200
             tr.prices__row
-              td Камуфляж седины (борода)
-              td 800
+              td Укладка <em>(30 мин)</em>
+              td 350
             tr.prices__row
-              td Хайр тату
+              td Камуфляж седины &mdash; голова <em>(30 мин)</em>
+              td 1&thinsp;200
+            tr.prices__row
+              td Камуфляж седины &mdash; борода <em>(30 мин)</em>
+              td 800 — 1&thinsp;000
+            tr.prices__row
+              td Хайр тату <em>(60 мин)</em>
               td от 300
             tr.prices__row
-              td Окантовка и укладка
+              td Окантовка и укладка <em>(60 мин)</em>
               td 600
             tr.prices__row
-              td Друг + Друг
-              td 2&thinsp;400
+              td Друг + Друг <em>(2 часа)</em>
+              td 2&thinsp;800
             //- tr.prices__row
               td Отец + сын
               td 2&thinsp;300
             tr.prices__row
-              td Мытьё головы
+              td Мытьё головы <em>(15 мин)</em>
               td 400
             tr.prices__row
-              td Стрижка + бритьё опасным лезвием
-              td 2&thinsp;000
+              td Стрижка + бритьё опасным лезвием <em>(2 часа)</em>
+              td 2&thinsp;000 — 3&thinsp;000
             tr.prices__row
-              td Бритьё головы опасным лезвием
+              td Бритьё головы опасным лезвием <em>(60 мин)</em>
               td 1&thinsp;700
             tr.prices__row
-              td Удаление волос воском. <em>(нос + уши + коррекция бровей)</em>
+              td Удаление волос воском. <em>(15 мин, нос + уши + коррекция бровей)</em>
               td 250
             tr.prices__row
-              td Пилинг <em>(уход за кожей головы + массаж кожи головы)</em>
+              td Пилинг <em>(60 мин, уход за кожей головы + массаж кожи головы)</em>
               td от 600
             tr.prices__row
-              td Био завивка
+              td Био завивка <em>(2 часа)</em>
               td от 2&thinsp;500
 
       section.promos#promos
@@ -179,7 +179,7 @@ html(lang="en")
           .promos-slider
             article.promo
               header.promo__header
-                p.promo__value 2&thinsp;400₽
+                p.promo__value 2&thinsp;800₽
                 .promo__caption
                   h3.promo__title Друг + Друг
                   p.promo__desc Стригитесь сами и&nbsp;приводите друзей. <br />Вместе веселее и&nbsp;дешевле.
@@ -274,15 +274,15 @@ html(lang="en")
 
 
       section.contacts#contacts
-        .contacts__map 
-        .contacts__card 
+        .contacts__map
+        .contacts__card
           .c-card
             .c-card__image: img(src="./img/logo-black.svg", alt="")
             .c-card__caption
               h2.c-card__title <em>Наши</em> Контакты
               p.c-card__text По всем, интересующим Вас, вопросам, Вы можете обратиться к менеджеру по телефону или отправить нам письмо на электронный адрес.
               p.c-card__subtitle До встречи в&nbsp;LOCLAME&nbsp;BARBERSHOP
-              .c-card__deco: img(src="./img/decos/mens-goods.svg", alt="Men's goods deco") 
+              .c-card__deco: img(src="./img/decos/mens-goods.svg", alt="Men's goods deco")
             .c-card__contacts
               h3.c-card__c-name Режим работы
               p.c-card__c-value
@@ -318,5 +318,5 @@ html(lang="en")
           .footer__legals-item Оставаясь на сайте пользователь соблюдать <a href="">пользовательское соглашение</a>
         p.footer__copy &copy; 2019—2024 Loclame Barbershop
 
-    script(src="scripts.js?v=5") 
-    script(src="https://w247743.yclients.com/widgetJS") 
+    script(src="scripts.js?v=5")
+    script(src="https://w247743.yclients.com/widgetJS")

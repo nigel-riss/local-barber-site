@@ -31,8 +31,18 @@
     padding-right: 20px;
 
     em {
+        // box model
+        display: inline-block;
+
+        // typography
         color: $grey;
+        font-size: 0.75em;
         font-weight: 400;
+
+        @include atDesktopS {
+            // typography
+            font-size: 0.875em;
+        }
     }
 }
 
