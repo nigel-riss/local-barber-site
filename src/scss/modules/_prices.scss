@@ -32,7 +32,7 @@
 
     em {
         // box model
-        display: inline-block;
+        display: block;
 
         // typography
         color: $grey;
@@ -40,6 +40,9 @@
         font-weight: 400;
 
         @include atDesktopS {
+            // box model
+            display: inline;
+
             // typography
             font-size: 0.875em;
         }
