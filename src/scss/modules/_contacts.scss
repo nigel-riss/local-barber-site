@@ -29,6 +29,7 @@
         position: absolute;
         top: -60px;
         right: 0;
+        z-index: 2;
 
         // box model
         // display: none;
@@ -37,7 +38,7 @@
 
     @include atDesktopS {
         top: -90px;
-    
+
         // box model
         width: 500px;
     }

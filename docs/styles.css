@@ -1767,6 +1767,7 @@ section {
     position: absolute;
     top: -60px;
     right: 0;
+    z-index: 2;
     width: 400px;
   }
 }

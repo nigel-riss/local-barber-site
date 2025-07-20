@@ -6,7 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Loclame Barbershop
 
-    link(rel="stylesheet", href="styles.css?v=7")
+    link(rel="stylesheet", href="styles.css?v=8")
 
     include ./modules/_favicon.pug
 
@@ -329,12 +329,24 @@ html(lang="en")
             //- li.footer-menu__item: a(href="#") Мастера
       .footer__contacts-n-legals
         .footer__contacts
-          .footer-contact <strong>г.Кемерово</strong> <br>ул. Красная, 15
-          .footer-contact <em>Телефон:</em> <a href="tel:+79236294797">+7 923 629-47-97</a> <br><em>E-mail:</em> <a href="mailto:localbarber@bk.ru">localbarber@bk.ru</a>
+          .footer-contact
+            strong г.Кемерово
+            br
+            | ул. Красная, 15
+          .footer-contact
+            em Телефон:&nbsp;
+            |
+            a(href="tel:+79236294797") +7 923 629-47-97
+            br
+            em E-mail:&nbsp;
+            |
+            a(href="mailto:localbarber@bk.ru") localbarber@bk.ru
         //- .footer__legals
           .footer__legals-item <a href="">Политика конфиденциальности</a> в&nbsp;отношении обработки данных получаемых сайтом
           .footer__legals-item Оставаясь на сайте пользователь соблюдать <a href="">пользовательское соглашение</a>
         p.footer__copy &copy; 2019—2025 Loclame Barbershop
 
-    script(src="scripts.js?v=5")
-    script(src="https://w247743.yclients.com/widgetJS")
+    script(src="scripts.js?v=5").
+      // scripts.js
+    script(src="https://w247743.yclients.com/widgetJS").
+      // widgetJS
